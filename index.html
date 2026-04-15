@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sk Arif Ahmed</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<canvas id="bg"></canvas>
+
+<nav>
+<ul>
+<li><a href="#hero">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#timeline">Experience</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#resume">Resume</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<main>
+
+<!-- HERO -->
+<section id="hero">
+<div class="hero-dual">
+
+<div class="panel hero-panel">
+<div class="identity-label">IDENTITY SIGNAL</div>
+
+<h1 class="cosmic-title" style="white-space: nowrap;">
+<span>S</span><span>K</span><span>&nbsp;</span><span>A</span><span>R</span><span>I</span><span>F</span>
+
+<span>A</span><span>H</span><span>M</span><span>E</span><span>D</span>
+</h1>
+
+<p class="hero-role">
+Full-Stack Developer · DevOps Engineer 
+</p>
+
+<p class="hero-desc">
+Building scalable software systems and deploying production-ready applications using modern backend and DevOps practices.
+</p>
+
+<div class="hero-buttons">
+<a class="btn primary" href="#projects">ENTER SYSTEM</a>
+<a class="btn ghost" href="#contact">CONTACT</a>
+</div>
+</div>
+
+<div class="portrait-module" style="margin-left: 200px;">
+  <div class="portrait-orb">
+    <img src="img.jpeg" class="hero-img">
+  </div>
+  <div class="orb-label">COMMANDER PROFILE</div>
+</div>
+
+</div>
+</section>
+
+<div id="orb"></div>
+<div id="trail-container"></div>
+
+<!-- ABOUT -->
+<section id="about">
+<div class="panel about-panel">
+<h2>About Me</h2>
+
+<div class="about-console">
+<p id="about-text">
+▣ INITIALIZING PROFILE...
+
+> I am a Computer Science undergraduate focused on building scalable and secure software systems. My work centers around backend development, distributed systems, and DevOps practices.
+
+> I have hands-on experience in full-stack development, authentication systems, and database optimization. I actively apply Data Structures and Algorithms to write efficient and maintainable code.
+
+> I have worked on real-world systems involving Docker, Kubernetes, and monitoring tools like Prometheus and Grafana.
+
+> My goal is to become a Software Engineer capable of designing, building, and deploying reliable production-grade systems.
+</p>
+</div>
+</div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+<h2 class="skills-title">SKILLS</h2>
+
+<div class="skill-field" id="skillField">
+
+<div class="skill-btn">Java</div>
+<div class="skill-btn">JavaScript</div>
+<div class="skill-btn">Python</div>
+<div class="skill-btn">PHP</div>
+<div class="skill-btn">SQL</div>
+
+<div class="skill-btn">HTML5</div>
+<div class="skill-btn">CSS3</div>
+<div class="skill-btn">React</div>
+
+<div class="skill-btn">Node.js</div>
+<div class="skill-btn">Express.js</div>
+<div class="skill-btn">REST APIs</div>
+
+<div class="skill-btn">MongoDB</div>
+<div class="skill-btn">Redis</div>
+
+<div class="skill-btn">Docker</div>
+<div class="skill-btn">Kubernetes</div>
+<div class="skill-btn">AWS EC2</div>
+<div class="skill-btn">Jenkins</div>
+<div class="skill-btn">GitHub Actions</div>
+
+<div class="skill-btn">Prometheus</div>
+<div class="skill-btn">Grafana</div>
+
+<div class="skill-btn">Git</div>
+<div class="skill-btn">Linux</div>
+
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+<h2 class="proj-title">PROJECTS</h2>
+
+<div class="wheel-wrapper">
+<div class="wheel">
+
+<div class="card">
+<h3>Buyora</h3>
+<div class="mini">
+<p>Scalable MERN e-commerce platform with DevOps stack.</p>
+<div class="actions">
+<a href="#" target="_blank">View Code ↗</a>
+<button class="view-more" data-modal="modal1">View More</button>
+</div>
+</div>
+</div>
+
+<div class="card">
+<h3>SigmaGPT</h3>
+<div class="mini">
+<p>AI SaaS platform with authentication & subscriptions.</p>
+<div class="actions">
+<a href="#" target="_blank">View Code ↗</a>
+<button class="view-more" data-modal="modal2">View More</button>
+</div>
+</div>
+</div>
+
+<div class="card">
+<h3>SpaceCall</h3>
+<div class="mini">
+<p>Real-time WebRTC video calling platform.</p>
+<div class="actions">
+<a href="#" target="_blank">View Code ↗</a>
+<button class="view-more" data-modal="modal3">View More</button>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- MODALS -->
+<div class="modal" id="modal1">
+<div class="modal-content modal-card">
+<button class="modal-close">&times;</button>
+<h2>Buyora</h2>
+<p>Deployed MERN system using Docker & Kubernetes with Redis caching and monitoring via Prometheus & Grafana.</p>
+</div>
+</div>
+
+<div class="modal" id="modal2">
+<div class="modal-content modal-card">
+<button class="modal-close">&times;</button>
+<h2>SigmaGPT</h2>
+<p>AI SaaS platform with JWT auth, Stripe billing, and Gemini API integration deployed using Docker.</p>
+</div>
+</div>
+
+<div class="modal" id="modal3">
+<div class="modal-content modal-card">
+<button class="modal-close">&times;</button>
+<h2>SpaceCall</h2>
+<p>Real-time WebRTC app using Socket.io signaling with authentication and reconnection handling.</p>
+</div>
+</div>
+
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+<h2 class="section-title">Education</h2>
+
+<div class="education-box">
+<div class="education-item"> Class 1 to class 10 - Egra Public School (ICSE)</div>
+<div class="education-item">Class 11 & 12 - Mount Litera Zee School (CBSE)</div>
+<div class="education-item">B.Tech CSE - Adamas University (2022–2026)</div>
+</div>
+</section>
+
+<!-- RESUME -->
+<section id="resume">
+<h2 class="section-title glow-text">Resume</h2>
+
+<div class="resume-box">
+<p class="resume-copy">Download my latest resume.</p>
+<a href="Arif_Resume.pdf" download class="resume-btn">
+Download Resume →
+</a>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2 class="section-title glow-text">Contact</h2>
+
+<div class="contact-box">
+
+<div class="links">
+<a href="https://github.com/Arif1258" target="_blank">1. GitHub</a>
+
+</div>
+<div class="links">
+
+<a href="https://www.linkedin.com/in/skarifahmed/" target="_blank">2. LinkedIn</a>
+</div>
+
+<p>3. Email: skarifahmedofficial@gmail.com</p>
+
+</div>
+</section>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.160/build/three.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
