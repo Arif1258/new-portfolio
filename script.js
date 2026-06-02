@@ -125,6 +125,12 @@ let scrollY = 0;
 window.addEventListener("scroll", () => {
   scrollY = window.scrollY;
 
+  // Toggle scrolled height shift state on navbar header
+  const header = document.getElementById("portfolio-header");
+  if (header) {
+    header.classList.toggle("scrolled", window.scrollY > 50);
+  }
+
   // Scroll Spy link active class highlighter
   let currentSection = "";
   const sectionsList = document.querySelectorAll("section:not(#modals-container)");
