@@ -1,251 +1,1139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Sk Arif Ahmed</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sk Arif Ahmed </title>
+  <meta name="description" content="Portfolio of Sk Arif Ahmed, highlighting software development internships, cybersecurity research, scalable MERN systems, Docker, Kubernetes, and Cloud workflows.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<canvas id="bg"></canvas>
+  <!-- Background WebGL canvas -->
+  <canvas id="bg" aria-hidden="true"></canvas>
 
-<nav>
-<ul>
-<li><a href="#hero">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#skills">Skills</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#timeline">Experience</a></li>
-<li><a href="#education">Education</a></li>
-<li><a href="#resume">Resume</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-</nav>
+  <!-- Keyboard Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<main>
+  <!-- Pointer tracking elements -->
+  <div id="orb" aria-hidden="true"></div>
+  <div id="trail-container" aria-hidden="true"></div>
 
-<!-- HERO -->
-<section id="hero">
-<div class="hero-dual">
+  <!-- HEADER NAVIGATION -->
+  <header>
+    <nav aria-label="Main Navigation">
+      <!-- Left side: Brand Logo & Details -->
+      <div class="brand-container">
+        <div class="brand-badge">SA</div>
+        <div class="brand-info">
+          <span class="brand-name">SK ARIF AHMED</span>
+          <span class="brand-title">Full Stack Developer</span>
+        </div>
+      </div>
+      
+      <!-- Hamburger Toggle Trigger (Mobile viewports) -->
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navList" aria-label="Open navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-<div class="panel hero-panel">
-<div class="identity-label">IDENTITY SIGNAL</div>
+      <!-- Center Links: Navigation Items -->
+      <ul id="navList">
+        <li>
+          <a href="#hero" class="nav-item-link">
+            <span class="nav-icon">🏠</span>
+            <span class="nav-text">Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="#about" class="nav-item-link">
+            <span class="nav-icon">👤</span>
+            <span class="nav-text">About</span>
+          </a>
+        </li>
+        <li>
+          <a href="#skills" class="nav-item-link">
+            <span class="nav-icon">⚡</span>
+            <span class="nav-text">Skills</span>
+          </a>
+        </li>
+        <li>
+          <a href="#achievements" class="nav-item-link">
+            <span class="nav-icon">🏆</span>
+            <span class="nav-text">Achievements</span>
+          </a>
+        </li>
+        <li>
+          <a href="#projects" class="nav-item-link">
+            <span class="nav-icon">💻</span>
+            <span class="nav-text">Projects</span>
+          </a>
+        </li>
+        <li>
+          <a href="#timeline" class="nav-item-link">
+            <span class="nav-icon">🚀</span>
+            <span class="nav-text">Experience</span>
+          </a>
+        </li>
+        <li>
+          <a href="#education" class="nav-item-link">
+            <span class="nav-icon">🎓</span>
+            <span class="nav-text">Education</span>
+          </a>
+        </li>
+        <li>
+          <a href="#contact" class="nav-item-link">
+            <span class="nav-icon">📬</span>
+            <span class="nav-text">Contact</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-<h1 class="cosmic-title" style="white-space: nowrap;">
-<span>S</span><span>K</span><span>&nbsp;</span><span>A</span><span>R</span><span>I</span><span>F</span>
+  <!-- MAIN LAYOUT -->
+  <main id="main-content">
 
-<span>A</span><span>H</span><span>M</span><span>E</span><span>D</span>
-</h1>
+    <!-- 1. HERO SECTION -->
+    <section id="hero" aria-label="Hero introduction and summary metrics">
+      <div class="hero-dual">
+        <!-- Left Side: Profile Text Summary and Stats -->
+        <div class="panel hero-left-panel">
+          <span class="hero-label">SOFTWARE DEVELOPER</span>
+          <h1 class="hero-name-heading">
+            SK ARIF AHMED
+          </h1>
+          <p class="hero-tagline-text">
+            Building scalable applications, secure distributed systems, and automated cloud-native infrastructures.
+          </p>
+          <div class="hero-badges-row">
+            <span class="hero-badge-tag"><span class="badge-icon">🏆</span> IIT Kharagpur Incubation</span>
+            <span class="hero-badge-tag"><span class="badge-icon">🥇</span> Anveshan AIU Winner</span>
+            <span class="hero-badge-tag"><span class="badge-icon">♟️</span> 2× District Chess Champion</span>
+          </div>
+          <p class="hero-desc-p">
+            B.Tech Computer Science student with hands-on software development internships and research experience in secure container orchestration.
+          </p>
+          <div class="hero-actions-row">
+            <a href="#projects" class="btn primary-btn-glow">Explore Work</a>
+            <a href="#contact" class="btn secondary-btn-border">Contact Me</a>
+          </div>
+          <!-- Hero Quick Stats Grid -->
+          <div class="hero-stats-grid">
+            <div class="hero-stat-card">
+              <span class="stat-number">500+</span>
+              <span class="stat-title">DSA Solved</span>
+            </div>
+            <div class="hero-stat-card">
+              <span class="stat-number">10+</span>
+              <span class="stat-title">Projects</span>
+            </div>
+            <div class="hero-stat-card">
+              <span class="stat-number">3</span>
+              <span class="stat-title">Internships</span>
+            </div>
+            <div class="hero-stat-card">
+              <span class="stat-number">2026</span>
+              <span class="stat-title">Graduation</span>
+            </div>
+          </div>
+        </div>
 
-<p class="hero-role">
-Full-Stack Developer · DevOps Engineer 
-</p>
+        <!-- Right Side: Profile Image Frame -->
+        <div class="hero-right-wrap">
+          <div class="portrait-glowing-frame">
+            <div class="rotating-glow-border"></div>
+            <div class="avatar-holder">
+              <img src="img.jpg" class="hero-profile-image" alt="Sk Arif Ahmed Portfolio Profile Image" loading="lazy">
+            </div>
+            <span class="avatar-sub-tag">SK ARIF AHMED</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<p class="hero-desc">
-Building scalable software systems and deploying production-ready applications using modern backend and DevOps practices.
-</p>
+    <!-- 2. ABOUT ME -->
+    <section id="about" aria-label="About Me Terminal and Quick Facts">
+      <div class="panel about-panel">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-two-columns">
+          <!-- Left bio console terminal -->
+          <div class="bio-console-card">
+            <pre class="terminal-text-box" id="about-text">▣ SYSTEM DIAGNOSTICS: READY.</pre>
+          </div>
+          <!-- Right quick facts grid -->
+          <div class="quick-facts-card">
+            <h3>Quick Facts</h3>
+            <table class="facts-table">
+              <tr>
+                <th>Current Status</th>
+                <td>B.Tech CSE Student, Adamas University</td>
+              </tr>
+              <tr>
+                <th>Focus Areas</th>
+                <td>Backend Engineering, Distributed Systems, DevOps</td>
+              </tr>
+              <tr>
+                <th>Primary Tech</th>
+                <td>Java, MERN Stack, Docker, Kubernetes, AWS, Redis</td>
+              </tr>
+              <tr>
+                <th>Location</th>
+                <td>Kolkata, West Bengal, India</td>
+              </tr>
+              <tr>
+                <th>Interests</th>
+                <td>Cloud Native Systems, Automation, Research, Chess</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<div class="hero-buttons">
-<a class="btn primary" href="#projects">ENTER SYSTEM</a>
-<a class="btn ghost" href="#contact">CONTACT</a>
-</div>
-</div>
+    <!-- 3. TECHNICAL SKILLS -->
+    <section id="skills" aria-label="Technical Skills categories grid">
+      <div class="panel">
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-subtitle">Technologies and methodologies I utilize to design and deploy software.</p>
+        <div class="skills-grid-wrapper">
+          <!-- Card 1: Languages -->
+          <div class="skill-card" tabindex="0">
+            <div class="skill-card-icon">💻</div>
+            <h3>Languages</h3>
+            <ul class="skill-badge-list">
+              <li>Java <span class="badge-level">Advanced</span></li>
+              <li>JavaScript <span class="badge-level">Advanced</span></li>
+              <li>Python <span class="badge-level">Intermediate</span></li>
+              <li>PHP <span class="badge-level">Intermediate</span></li>
+              <li>SQL <span class="badge-level">Intermediate</span></li>
+            </ul>
+          </div>
+          <!-- Card 2: Frontend -->
+          <div class="skill-card" tabindex="0">
+            <div class="skill-card-icon">⚛️</div>
+            <h3>Frontend</h3>
+            <ul class="skill-badge-list">
+              <li>HTML5 <span class="badge-level">Advanced</span></li>
+              <li>CSS3 <span class="badge-level">Advanced</span></li>
+              <li>React <span class="badge-level">Intermediate</span></li>
+              <li>Tailwind CSS <span class="badge-level">Intermediate</span></li>
+            </ul>
+          </div>
+          <!-- Card 3: Backend -->
+          <div class="skill-card" tabindex="0">
+            <div class="skill-card-icon">⚙️</div>
+            <h3>Backend</h3>
+            <ul class="skill-badge-list">
+              <li>Node.js <span class="badge-level">Advanced</span></li>
+              <li>Express.js <span class="badge-level">Advanced</span></li>
+              <li>REST APIs <span class="badge-level">Advanced</span></li>
+              <li>JWT Auth <span class="badge-level">Advanced</span></li>
+            </ul>
+          </div>
+          <!-- Card 4: Databases -->
+          <div class="skill-card" tabindex="0">
+            <div class="skill-card-icon">🍃</div>
+            <h3>Databases</h3>
+            <ul class="skill-badge-list">
+              <li>MongoDB <span class="badge-level">Intermediate</span></li>
+              <li>MySQL <span class="badge-level">Intermediate</span></li>
+              <li>Redis <span class="badge-level">Intermediate</span></li>
+            </ul>
+          </div>
+          <!-- Card 5: DevOps & Cloud -->
+          <div class="skill-card" tabindex="0">
+            <div class="skill-card-icon">🐳</div>
+            <h3>DevOps & Cloud</h3>
+            <ul class="skill-badge-list">
+              <li>Docker <span class="badge-level">Advanced</span></li>
+              <li>Kubernetes <span class="badge-level">Intermediate</span></li>
+              <li>AWS EC2 <span class="badge-level">Intermediate</span></li>
+              <li>Jenkins <span class="badge-level">Intermediate</span></li>
+              <li>GitHub Actions <span class="badge-level">Intermediate</span></li>
+              <li>Prometheus / Grafana <span class="badge-level">Intermediate</span></li>
+            </ul>
+          </div>
+          <!-- Card 6: Tools -->
+          <div class="skill-card" tabindex="0">
+            <div class="skill-card-icon">🛠️</div>
+            <h3>Tools</h3>
+            <ul class="skill-badge-list">
+              <li>Git / GitHub <span class="badge-level">Advanced</span></li>
+              <li>Linux / Bash <span class="badge-level">Intermediate</span></li>
+              <li>Postman <span class="badge-level">Advanced</span></li>
+              <li>VS Code <span class="badge-level">Advanced</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<div class="portrait-module" style="margin-left: 200px;">
-  <div class="portrait-orb">
-    <img src="img.jpeg" class="hero-img">
+    <!-- 4. PROJECTS -->
+    <section id="projects" aria-label="Featured Software Engineering Builds Showcase">
+      <div class="panel">
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">Web applications and platforms engineered with modern scalable tech stacks.</p>
+        <div class="projects-grid-container">
+          
+          <!-- Project 1: Movie Recommendation System -->
+          <div class="project-showcase-card" tabindex="0">
+            <div class="project-img-placeholder">
+              <span>🎬 Movie Rec System</span>
+            </div>
+            <div class="card-inner-pad">
+              <div class="project-header">
+                <h3>Movie Rec System</h3>
+                <span class="project-metric">🤖 ML Filtering</span>
+              </div>
+              <p class="project-summary-desc">Recommends movies based on user choices using collaborative filtering and recommendation algorithms.</p>
+              <div class="project-tech-tags">
+                <span>Python</span><span>Streamlit</span><span>Pandas</span>
+              </div>
+              <div class="project-actions-footer">
+                <a href="https://github.com/Arif1258/Movie-Recommendation-System" target="_blank" class="github-link">GitHub</a>
+                <button class="view-details-trigger-btn" data-modal="modal1">View Details</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Fake News Detector -->
+          <div class="project-showcase-card" tabindex="0">
+            <div class="project-img-placeholder">
+              <span>📊 Fake News Detector</span>
+            </div>
+            <div class="card-inner-pad">
+              <div class="project-header">
+                <h3>Fake News Detector</h3>
+                <span class="project-metric">🎯 NLP Accuracy</span>
+              </div>
+              <p class="project-summary-desc">Detects fake news headlines using machine learning and natural language processing.</p>
+              <div class="project-tech-tags">
+                <span>Python</span><span>Streamlit</span><span>NLP</span>
+              </div>
+              <div class="project-actions-footer">
+                <a href="https://github.com/Arif1258/Fake-News-Detector" target="_blank" class="github-link">GitHub</a>
+                <button class="view-details-trigger-btn" data-modal="modal2">View Details</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: SigmaGPT – AI Chat App -->
+          <div class="project-showcase-card" tabindex="0">
+            <div class="project-img-placeholder">
+              <span>💬 SigmaGPT Chat</span>
+            </div>
+            <div class="card-inner-pad">
+              <div class="project-header">
+                <h3>SigmaGPT AI Chat</h3>
+                <span class="project-metric">⚡ GPT Models</span>
+              </div>
+              <p class="project-summary-desc">An intelligent AI chat platform powered by GPT models with a modern interface.</p>
+              <div class="project-tech-tags">
+                <span>React.js</span><span>Node.js</span><span>OpenAI API</span>
+              </div>
+              <div class="project-actions-footer">
+                <a href="https://github.com/Arif1258/SigmaGPT" target="_blank" class="github-link">GitHub</a>
+                <button class="view-details-trigger-btn" data-modal="modal3">View Details</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: SpaceCall – Video Calling -->
+          <div class="project-showcase-card" tabindex="0">
+            <div class="project-img-placeholder">
+              <span>📹 SpaceCall Video</span>
+            </div>
+            <div class="card-inner-pad">
+              <div class="project-header">
+                <h3>SpaceCall Video</h3>
+                <span class="project-metric">📶 Low Latency</span>
+              </div>
+              <p class="project-summary-desc">Real-time video conferencing platform built using WebRTC and Socket.io.</p>
+              <div class="project-tech-tags">
+                <span>React.js</span><span>WebRTC</span><span>Socket.io</span>
+              </div>
+              <div class="project-actions-footer">
+                <a href="https://github.com/Arif1258/SpaceCall" target="_blank" class="github-link">GitHub</a>
+                <button class="view-details-trigger-btn" data-modal="modal4">View Details</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5: Stockyard (Zerodha Clone) -->
+          <div class="project-showcase-card" tabindex="0">
+            <div class="project-img-placeholder">
+              <span>📈 Stockyard Trading</span>
+            </div>
+            <div class="card-inner-pad">
+              <div class="project-header">
+                <h3>Stockyard Clone</h3>
+                <span class="project-metric">💰 Portfolio</span>
+              </div>
+              <p class="project-summary-desc">A trading platform clone with dashboards, market tracking, and portfolio management.</p>
+              <div class="project-tech-tags">
+                <span>React.js</span><span>Express.js</span><span>MongoDB</span>
+              </div>
+              <div class="project-actions-footer">
+                <a href="https://github.com/Arif1258/Stockyard" target="_blank" class="github-link">GitHub</a>
+                <button class="view-details-trigger-btn" data-modal="modal5">View Details</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6: Wanderlust (Hotel Booking) -->
+          <div class="project-showcase-card" tabindex="0">
+            <div class="project-img-placeholder">
+              <span>🏨 Wanderlust Booking</span>
+            </div>
+            <div class="card-inner-pad">
+              <div class="project-header">
+                <h3>Wanderlust Booking</h3>
+                <span class="project-metric">🔑 Authentication</span>
+              </div>
+              <p class="project-summary-desc">A full-stack hotel reservation system with authentication, filtering, and booking history.</p>
+              <div class="project-tech-tags">
+                <span>React.js</span><span>Node.js</span><span>MongoDB</span>
+              </div>
+              <div class="project-actions-footer">
+                <a href="https://github.com/Arif1258/Wanderlust" target="_blank" class="github-link">GitHub</a>
+                <button class="view-details-trigger-btn" data-modal="modal6">View Details</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 7: Climatiya (Weather App) -->
+          <div class="project-showcase-card" tabindex="0">
+            <div class="project-img-placeholder">
+              <span>🌤️ Climatiya Weather</span>
+            </div>
+            <div class="card-inner-pad">
+              <div class="project-header">
+                <h3>Climatiya Weather</h3>
+                <span class="project-metric">🌧️ Real-Time</span>
+              </div>
+              <p class="project-summary-desc">A clean weather application that fetches real-time weather information for any city.</p>
+              <div class="project-tech-tags">
+                <span>React.js</span><span>JavaScript</span><span>OpenWeather API</span>
+              </div>
+              <div class="project-actions-footer">
+                <a href="https://github.com/Arif1258/Climatiya" target="_blank" class="github-link">GitHub</a>
+                <button class="view-details-trigger-btn" data-modal="modal7">View Details</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 8: Krisp (URL Shortener) -->
+          <div class="project-showcase-card" tabindex="0">
+            <div class="project-img-placeholder">
+              <span>🔗 Krisp Shortener</span>
+            </div>
+            <div class="card-inner-pad">
+              <div class="project-header">
+                <h3>Krisp Shortener</h3>
+                <span class="project-metric">📊 Analytics</span>
+              </div>
+              <p class="project-summary-desc">A URL shortener with analytics, click tracking, and redirection management.</p>
+              <div class="project-tech-tags">
+                <span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>EJS</span>
+              </div>
+              <div class="project-actions-footer">
+                <a href="https://github.com/Arif1258/Krisp" target="_blank" class="github-link">GitHub</a>
+                <button class="view-details-trigger-btn" data-modal="modal8">View Details</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. PROFESSIONAL EXPERIENCE -->
+    <section id="timeline" aria-label="Professional Experience Timeline">
+      <div class="panel">
+        <h2 class="section-title">Experience</h2>
+        <p class="section-subtitle">Chronological timeline of software engineering and research positions.</p>
+        <div class="experience-timeline-container">
+          <!-- Internship 1: UCC Ireland -->
+          <div class="experience-timeline-item" tabindex="0">
+            <div class="exp-bullet"></div>
+            <div class="exp-header-info">
+              <span class="exp-title">Cybersecurity Research Intern</span>
+              <span class="exp-duration">Jul 2025 – Sep 2025</span>
+            </div>
+            <div class="exp-company-details">University College Cork, Ireland</div>
+            <p class="exp-job-summary">
+              Audited container orchestration cluster deployments to identify threat vectors. Developed threat modeling scripts to validate secure Kubernetes namespace configurations, resource constraints, and network access policies.
+            </p>
+            <div class="exp-tech-badges">
+              <span>Kubernetes</span><span>Docker</span><span>Python</span><span>Threat Modeling</span><span>Linux</span>
+            </div>
+          </div>
+          <!-- Internship 2: KATSI Canada -->
+          <div class="experience-timeline-item" tabindex="0">
+            <div class="exp-bullet"></div>
+            <div class="exp-header-info">
+              <span class="exp-title">Software Development Intern</span>
+              <span class="exp-duration">Aug 2024 – Feb 2025</span>
+            </div>
+            <div class="exp-company-details">KATSI, Canada</div>
+            <p class="exp-job-summary">
+              Engineered backend API endpoints and schema interfaces for database persistence. Set up secure session verification states utilizing JSON Web Token (JWT) strategies, and optimized MongoDB queries to reduce API latency.
+            </p>
+            <div class="exp-tech-badges">
+              <span>React</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>JWT</span>
+            </div>
+          </div>
+          <!-- Internship 3: Adamas University -->
+          <div class="experience-timeline-item" tabindex="0">
+            <div class="exp-bullet"></div>
+            <div class="exp-header-info">
+              <span class="exp-title">Software Development Intern</span>
+              <span class="exp-duration">Dec 2023 – Mar 2024</span>
+            </div>
+            <div class="exp-company-details">Adamas University, Kolkata</div>
+            <p class="exp-job-summary">
+              Developed administrative management features and promotion appraisal calculation modules. Containerized legacy web modules to enable zero-downtime test environments and audited performance appraisal calculations formulas.
+            </p>
+            <div class="exp-tech-badges">
+              <span>PHP</span><span>MySQL</span><span>HTML5</span><span>CSS3</span><span>Docker</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. ACHIEVEMENTS -->
+    <section id="achievements" aria-label="Competitive and Technical Achievements">
+      <div class="panel">
+        <h2 class="section-title">Achievements & Recognition</h2>
+        <p class="section-subtitle">Awards, Competitions, Leadership, Problem Solving and Professional Growth.</p>
+        
+        <!-- Achievements Stats Counter Grid -->
+        <div class="achievements-counter-grid">
+          <div class="ach-counter-card">
+            <span class="ach-counter-icon">🏆</span>
+            <div class="ach-counter-info">
+              <span class="ach-counter-title">Awards & Competitions</span>
+              <span class="ach-counter-number">6+</span>
+              <span class="ach-counter-sub">Major Achievements</span>
+            </div>
+          </div>
+          <div class="ach-counter-card">
+            <span class="ach-counter-icon">💻</span>
+            <div class="ach-counter-info">
+              <span class="ach-counter-title">DSA & Coding</span>
+              <span class="ach-counter-number">250+</span>
+              <span class="ach-counter-sub">Problems Solved</span>
+            </div>
+          </div>
+          <div class="ach-counter-card">
+            <span class="ach-counter-icon">🌐</span>
+            <div class="ach-counter-info">
+              <span class="ach-counter-title">Networking</span>
+              <span class="ach-counter-number">8000+</span>
+              <span class="ach-counter-sub">LinkedIn Connections</span>
+            </div>
+          </div>
+          <div class="ach-counter-card">
+            <span class="ach-counter-icon">♟️</span>
+            <div class="ach-counter-info">
+              <span class="ach-counter-title">Sports</span>
+              <span class="ach-counter-number">2&times;</span>
+              <span class="ach-counter-sub">District Chess Champion</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Achievements Cards Grid -->
+        <div class="achievements-grid-box">
+          <!-- Card 1: IIT Kharagpur Incubation -->
+          <div class="achievement-card" tabindex="0">
+            <div class="ach-card-header">
+              <div class="ach-icon">🏆</div>
+              <span class="ach-year">2025</span>
+            </div>
+            <h3>Selected for Incubation</h3>
+            <p class="ach-org">CRTDH, IIT Kharagpur</p>
+            <p class="ach-desc">Acquired operational mentoring and resource grants for developing scalable administrative promotion software.</p>
+          </div>
+          
+          <!-- Card 2: Vishwakarma Awards Winner -->
+          <div class="achievement-card" tabindex="0">
+            <div class="ach-card-header">
+              <div class="ach-icon">🏆</div>
+              <span class="ach-year">2025</span>
+            </div>
+            <h3>Vishwakarma Awards Winner</h3>
+            <p class="ach-org">IIT Hyderabad</p>
+            <p class="ach-desc">Secured first place in the national hackathon for engineering automated disaster response telemetry dashboards.</p>
+          </div>
+          
+          <!-- Card 3: Anveshan AIU Zonal East -->
+          <div class="achievement-card" tabindex="0">
+            <div class="ach-card-header">
+              <div class="ach-icon">🥇</div>
+              <span class="ach-year">2025</span>
+            </div>
+            <h3>1st Place – Anveshan AIU 2025 (Zonal East)</h3>
+            <p class="ach-org">Association of Indian Universities</p>
+            <p class="ach-desc">Advanced to the International Round after securing top honors for designing secure distributed networking frameworks.</p>
+          </div>
+          
+          <!-- Card 4: NIT Kolkata Hackathon -->
+          <div class="achievement-card" tabindex="0">
+            <div class="ach-card-header">
+              <div class="ach-icon">🥈</div>
+              <span class="ach-year">2025</span>
+            </div>
+            <h3>1st Runners-Up – 24-Hour Hackathon</h3>
+            <p class="ach-org">NIT Kolkata</p>
+            <p class="ach-desc">Placed second in the high-intensity hackathon for rapid prototyping of secure web services and telemetry dashboards.</p>
+          </div>
+          
+          <!-- Card 5: District Chess Champion -->
+          <div class="achievement-card" tabindex="0">
+            <div class="ach-card-header">
+              <div class="ach-icon">♟️</div>
+              <span class="ach-year">2023</span>
+            </div>
+            <h3>2&times; District Chess Champion</h3>
+            <p class="ach-org">Sports Division</p>
+            <p class="ach-desc">Winner of back-to-back district chess tournaments, demonstrating strategic planning, tactical focus, and analytical thinking.</p>
+          </div>
+          
+          <!-- Card 6: LeetCode DSA -->
+          <div class="achievement-card" tabindex="0">
+            <div class="ach-card-header">
+              <div class="ach-icon">💻</div>
+              <span class="ach-year">2025</span>
+            </div>
+            <h3>Solved 250+ Problems on LeetCode</h3>
+            <p class="ach-org">LeetCode & GFG</p>
+            <p class="ach-desc">Solved over 250 algorithmic problems on LeetCode (and 500+ across competitive platforms) with optimized runtime and memory metrics.</p>
+          </div>
+          
+          <!-- Card 7: LinkedIn Network -->
+          <div class="achievement-card" tabindex="0">
+            <div class="ach-card-header">
+              <div class="ach-icon">🌐</div>
+              <span class="ach-year">2025</span>
+            </div>
+            <h3>Professional LinkedIn Network</h3>
+            <p class="ach-org">8,000+ Connections</p>
+            <p class="ach-desc">Built an organic professional community of engineers, recruiters, and tech leaders to foster industry collaborations.</p>
+          </div>
+          
+          <!-- Card 8: Full Stack Projects -->
+          <div class="achievement-card" tabindex="0">
+            <div class="ach-card-header">
+              <div class="ach-icon">🎯</div>
+              <span class="ach-year">2025</span>
+            </div>
+            <h3>Multiple Full Stack Projects Built</h3>
+            <p class="ach-org">MERN & Cloud Applications</p>
+            <p class="ach-desc">Designed, developed, and deployed high-performance responsive web applications, secure REST APIs, and microservices.</p>
+          </div>
+          
+          <!-- Card 9: International Internships -->
+          <div class="achievement-card" tabindex="0">
+            <div class="ach-card-header">
+              <div class="ach-icon">🌍</div>
+              <span class="ach-year">2024</span>
+            </div>
+            <h3>International Internship Experience</h3>
+            <p class="ach-org">UCC Ireland & KATSI Canada</p>
+            <p class="ach-desc">Gained global industry exposure working on container security research and building scalable commercial architectures.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. EDUCATION -->
+    <section id="education" aria-label="Academic qualifications history">
+      <div class="panel">
+        <h2 class="section-title">Education</h2>
+        <p class="section-subtitle">Chronological record of academic credentials and grades.</p>
+        <div class="education-timeline">
+          <!-- B.Tech -->
+          <div class="edu-timeline-card" tabindex="0">
+            <div class="edu-bullet"></div>
+            <div class="edu-top-row">
+              <span class="edu-degree">B.Tech in Computer Science & Engineering</span>
+              <span class="edu-duration">2022 – 2026</span>
+            </div>
+            <div class="edu-institution">Adamas University, Kolkata</div>
+            <div class="edu-grade-score">Grade: <strong>CGPA 9.30 / 10</strong></div>
+          </div>
+          <!-- CBSE Class XII -->
+          <div class="edu-timeline-card" tabindex="0">
+            <div class="edu-bullet"></div>
+            <div class="edu-top-row">
+              <span class="edu-degree">CBSE Class XII (Higher Secondary)</span>
+              <span class="edu-duration">2020 – 2022</span>
+            </div>
+            <div class="edu-institution">Mount Litera Zee School</div>
+            <div class="edu-grade-score">Grade: <strong>84.6%</strong></div>
+          </div>
+          <!-- ICSE Class X -->
+          <div class="edu-timeline-card" tabindex="0">
+            <div class="edu-bullet"></div>
+            <div class="edu-top-row">
+              <span class="edu-degree">ICSE Class X (Secondary School Certificate)</span>
+              <span class="edu-duration">2018 – 2020</span>
+            </div>
+            <div class="edu-institution">Egra Public School</div>
+            <div class="edu-grade-score">Grade: <strong>90.2%</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. CODING PROFILES -->
+    <section id="profiles" aria-label="Coding profiles links buttons">
+      <div class="panel">
+        <h2 class="section-title">Coding Profiles</h2>
+        <p class="section-subtitle">Connect with me or review my software contributions on popular platforms.</p>
+        <div class="profiles-grid-container">
+          <!-- GitHub Card -->
+          <a href="https://github.com/Arif1258" target="_blank" class="profile-platform-card">
+            <div class="platform-logo">🐙</div>
+            <h3>GitHub</h3>
+            <span class="platform-meta">Arif1258</span>
+            <p>Review source code, projects, and containerized deployment workflow configurations.</p>
+          </a>
+          <!-- LeetCode Card -->
+          <a href="https://leetcode.com/u/Arif1258/" target="_blank" class="profile-platform-card">
+            <div class="platform-logo">🔣</div>
+            <h3>LeetCode</h3>
+            <span class="platform-meta">Arif1258</span>
+            <p>Inspect problem-solving ranks and Java algorithm design patterns solutions.</p>
+          </a>
+          <!-- LinkedIn Card -->
+          <a href="https://www.linkedin.com/in/skarifahmed/" target="_blank" class="profile-platform-card">
+            <div class="platform-logo">🔗</div>
+            <h3>LinkedIn</h3>
+            <span class="platform-meta">Sk Arif Ahmed</span>
+            <p>Establish corporate connections and review professional experiences logs.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. RESUME -->
+    <section id="resume" aria-label="Resume Preview and Download link">
+      <div class="panel">
+        <h2 class="section-title">Resume</h2>
+        <div class="resume-download-layout">
+          <p class="resume-info-text">
+            Review my professional qualifications, detailed project architectures, academic internships records, and core technical proficiencies.
+          </p>
+          <a href="Arif_Resume.pdf" download class="btn download-resume-trigger">
+            Download Resume (PDF) &rarr;
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. CONTACT -->
+    <section id="contact" aria-label="Contact Gateway Form and links">
+      <div class="panel contact-panel">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-subtitle">Have a question or want to build something together? Send a signal.</p>
+        <div class="contact-dual-layout">
+          <!-- Left: Information card -->
+          <div class="contact-details-box">
+            <h3>Contact Information</h3>
+            <p>Feel free to reach out to me directly or connect with me via social media handles.</p>
+            <ul class="contact-meta-info-list">
+              <li>
+                <span class="meta-label">Primary Email:</span>
+                <span class="meta-val" id="emailText">skarifahmedofficial@gmail.com</span>
+              </li>
+              <li>
+                <span class="meta-label">Current Address:</span>
+                <span class="meta-val">Kolkata, West Bengal, India</span>
+              </li>
+            </ul>
+            <button class="btn secondary-btn-border" id="copyEmailBtn">Copy Email Address</button>
+          </div>
+          <!-- Right: dispatch form -->
+          <div class="contact-form-box">
+            <h3>Send Message</h3>
+            <textarea class="contact-input-field" id="messageText" placeholder="Write your message here..."></textarea>
+            <button class="btn primary-btn-glow" id="sendBtn">Send Transmission</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MODALS CONTAINER -->
+  <div id="modals-container" aria-label="Projects details pop-up modal boxes">
+
+    <!-- Modal 1: Movie Recommendation System -->
+    <div class="modal" id="modal1" aria-hidden="true" role="dialog" aria-labelledby="modal1Title">
+      <div class="modal-card">
+        <button class="modal-close" aria-label="Close modal">&times;</button>
+        <h2 id="modal1Title">Movie Recommendation System</h2>
+        <p class="modal-intro">Machine learning recommendation model built with Python.</p>
+        <div class="modal-body-content">
+          <h4>Overview</h4>
+          <p>Recommends movies based on user choices using collaborative filtering and recommendation algorithms.</p>
+          <h4>Features</h4>
+          <ul>
+            <li>Dynamic movie lookup with auto-complete features.</li>
+            <li>Collaborative filtering engines finding similar user metrics.</li>
+            <li>High-performance vector matrices calculations.</li>
+          </ul>
+          <h4>Tech Stack</h4>
+          <div class="modal-tech-tags-list">
+            <span>Python</span><span>Streamlit</span><span>Pandas</span><span>Scikit-Learn</span>
+          </div>
+          <h4>Challenges</h4>
+          <p>Handling highly sparse recommendation matrices and optimizing query times for movie lookups.</p>
+          <h4>Future Improvements</h4>
+          <p>Integrate hybrid content-based filtering algorithms and connect with TMDB APIs for movie poster rendering.</p>
+        </div>
+        <div class="modal-footer-actions">
+          <a href="https://github.com/Arif1258/Movie-Recommendation-System" target="_blank" class="btn primary-btn-glow">Source Code</a>
+          <button class="btn secondary-btn-border modal-dismiss-btn">Dismiss</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2: Fake News Detector -->
+    <div class="modal" id="modal2" aria-hidden="true" role="dialog" aria-labelledby="modal2Title">
+      <div class="modal-card">
+        <button class="modal-close" aria-label="Close modal">&times;</button>
+        <h2 id="modal2Title">Fake News Detector</h2>
+        <p class="modal-intro">Machine learning headline classifier engine.</p>
+        <div class="modal-body-content">
+          <h4>Overview</h4>
+          <p>Detects fake news headlines using machine learning and natural language processing.</p>
+          <h4>Features</h4>
+          <ul>
+            <li>Real-time classification probability index returns.</li>
+            <li>Interactive article parser processing body text elements.</li>
+            <li>Natural language processing pipelines extracting tokenized features.</li>
+          </ul>
+          <h4>Tech Stack</h4>
+          <div class="modal-tech-tags-list">
+            <span>Python</span><span>Streamlit</span><span>NLP</span><span>Scikit-Learn</span><span>NLTK</span>
+          </div>
+          <h4>Challenges</h4>
+          <p>Managing overfitting in headline classifiers and processing complex idioms or satire.</p>
+          <h4>Future Improvements</h4>
+          <p>Support transformer-based classifier models (e.g. BERT) and connect real-time web crawlers for claim validation.</p>
+        </div>
+        <div class="modal-footer-actions">
+          <a href="https://github.com/Arif1258/Fake-News-Detector" target="_blank" class="btn primary-btn-glow">Source Code</a>
+          <button class="btn secondary-btn-border modal-dismiss-btn">Dismiss</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3: SigmaGPT – AI Chat App -->
+    <div class="modal" id="modal3" aria-hidden="true" role="dialog" aria-labelledby="modal3Title">
+      <div class="modal-card">
+        <button class="modal-close" aria-label="Close modal">&times;</button>
+        <h2 id="modal3Title">SigmaGPT AI Chat</h2>
+        <p class="modal-intro">Intelligent GPT-powered SaaS chat application.</p>
+        <div class="modal-body-content">
+          <h4>Overview</h4>
+          <p>An intelligent AI chat platform powered by GPT models with a modern interface.</p>
+          <h4>Features</h4>
+          <ul>
+            <li>Persistent user chat history logs saved to session states.</li>
+            <li>Stream processing delivering text replies asynchronously with low latency.</li>
+            <li>Responsive layouts styling clean conversation blocks.</li>
+          </ul>
+          <h4>Tech Stack</h4>
+          <div class="modal-tech-tags-list">
+            <span>React.js</span><span>Node.js</span><span>OpenAI API</span><span>CSS Modules</span>
+          </div>
+          <h4>Challenges</h4>
+          <p>Handling API token usage counts efficiently and designing interactive fluid layouts that match AI reply streams.</p>
+          <h4>Future Improvements</h4>
+          <p>Add voice inputs commands integration and support system instructions updates.</p>
+        </div>
+        <div class="modal-footer-actions">
+          <a href="https://github.com/Arif1258/SigmaGPT" target="_blank" class="btn primary-btn-glow">Source Code</a>
+          <button class="btn secondary-btn-border modal-dismiss-btn">Dismiss</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 4: SpaceCall – Video Calling -->
+    <div class="modal" id="modal4" aria-hidden="true" role="dialog" aria-labelledby="modal4Title">
+      <div class="modal-card">
+        <button class="modal-close" aria-label="Close modal">&times;</button>
+        <h2 id="modal4Title">SpaceCall Video</h2>
+        <p class="modal-intro">Real-time peer communication streaming service.</p>
+        <div class="modal-body-content">
+          <h4>Overview</h4>
+          <p>Real-time video conferencing platform built using WebRTC and Socket.io.</p>
+          <h4>Features</h4>
+          <ul>
+            <li>Dynamic room creation linking multiple users directly.</li>
+            <li>Audio-video tracks controls allowing toggle actions.</li>
+            <li>Node.js-based signaling servers negotiating connections.</li>
+          </ul>
+          <h4>Tech Stack</h4>
+          <div class="modal-tech-tags-list">
+            <span>React.js</span><span>WebRTC</span><span>Socket.io</span><span>Node.js</span>
+          </div>
+          <h4>Challenges</h4>
+          <p>Handling network connection drops and routing signaling packets across firewalls using ICE candidates.</p>
+          <h4>Future Improvements</h4>
+          <p>Support screen sharing modules and design text chatting channels inside rooms.</p>
+        </div>
+        <div class="modal-footer-actions">
+          <a href="https://github.com/Arif1258/SpaceCall" target="_blank" class="btn primary-btn-glow">Source Code</a>
+          <button class="btn secondary-btn-border modal-dismiss-btn">Dismiss</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 5: Stockyard (Zerodha Clone) -->
+    <div class="modal" id="modal5" aria-hidden="true" role="dialog" aria-labelledby="modal5Title">
+      <div class="modal-card">
+        <button class="modal-close" aria-label="Close modal">&times;</button>
+        <h2 id="modal5Title">Stockyard Trading</h2>
+        <p class="modal-intro">Full-stack investments and mock trading dashboard.</p>
+        <div class="modal-body-content">
+          <h4>Overview</h4>
+          <p>A trading platform clone with dashboards, market tracking, and portfolio management.</p>
+          <h4>Features</h4>
+          <ul>
+            <li>Dashboard analytics illustrating account balance vectors and holdings.</li>
+            <li>Interactive buy/sell portals simulating order processes.</li>
+            <li>Real-time market asset updates mapping indices metrics.</li>
+          </ul>
+          <h4>Tech Stack</h4>
+          <div class="modal-tech-tags-list">
+            <span>React.js</span><span>Express.js</span><span>MongoDB</span><span>Node.js</span>
+          </div>
+          <h4>Challenges</h4>
+          <p>Synchronizing high-frequency simulated trades with database records and matching balances indexes.</p>
+          <h4>Future Improvements</h4>
+          <p>Connect with live stock index APIs and implement custom alerts for stock price updates.</p>
+        </div>
+        <div class="modal-footer-actions">
+          <a href="https://github.com/Arif1258/Stockyard" target="_blank" class="btn primary-btn-glow">Source Code</a>
+          <button class="btn secondary-btn-border modal-dismiss-btn">Dismiss</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 6: Wanderlust (Hotel Booking) -->
+    <div class="modal" id="modal6" aria-hidden="true" role="dialog" aria-labelledby="modal6Title">
+      <div class="modal-card">
+        <button class="modal-close" aria-label="Close modal">&times;</button>
+        <h2 id="modal6Title">Wanderlust Booking</h2>
+        <p class="modal-intro">MERN-stack hotel and residence reservation system.</p>
+        <div class="modal-body-content">
+          <h4>Overview</h4>
+          <p>A full-stack hotel reservation system with authentication, filtering, and booking history.</p>
+          <h4>Features</h4>
+          <ul>
+            <li>Role-based dashboards tracking user bookings and owner listings.</li>
+            <li>Detailed filters category searching by location, price, and amenities.</li>
+            <li>Secure user profiles logs and password encryptions.</li>
+          </ul>
+          <h4>Tech Stack</h4>
+          <div class="modal-tech-tags-list">
+            <span>React.js</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span>
+          </div>
+          <h4>Challenges</h4>
+          <p>Preventing double bookings for overlapping dates and optimizing searches across database categories.</p>
+          <h4>Future Improvements</h4>
+          <p>Support payment gateways checkout gates and integrate interactive map search systems.</p>
+        </div>
+        <div class="modal-footer-actions">
+          <a href="https://github.com/Arif1258/Wanderlust" target="_blank" class="btn primary-btn-glow">Source Code</a>
+          <button class="btn secondary-btn-border modal-dismiss-btn">Dismiss</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 7: Climatiya (Weather App) -->
+    <div class="modal" id="modal7" aria-hidden="true" role="dialog" aria-labelledby="modal7Title">
+      <div class="modal-card">
+        <button class="modal-close" aria-label="Close modal">&times;</button>
+        <h2 id="modal7Title">Climatiya Weather</h2>
+        <p class="modal-intro">Clean real-time atmospheric forecast interface.</p>
+        <div class="modal-body-content">
+          <h4>Overview</h4>
+          <p>A clean weather application that fetches real-time weather information for any city.</p>
+          <h4>Features</h4>
+          <ul>
+            <li>Real-time weather indicators showing temperature, humidity, and wind metrics.</li>
+            <li>Smart search history storing recently tracked locations.</li>
+            <li>Responsive layouts matching background graphics to target weather states.</li>
+          </ul>
+          <h4>Tech Stack</h4>
+          <div class="modal-tech-tags-list">
+            <span>React.js</span><span>JavaScript</span><span>OpenWeather API</span>
+          </div>
+          <h4>Challenges</h4>
+          <p>Handling API request limits and managing asynchronous fetch errors gracefully for incorrect searches.</p>
+          <h4>Future Improvements</h4>
+          <p>Include 5-day predictive forecasts and implement user geolocations auto-lookup on load.</p>
+        </div>
+        <div class="modal-footer-actions">
+          <a href="https://github.com/Arif1258/Climatiya" target="_blank" class="btn primary-btn-glow">Source Code</a>
+          <button class="btn secondary-btn-border modal-dismiss-btn">Dismiss</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 8: Krisp (URL Shortener) -->
+    <div class="modal" id="modal8" aria-hidden="true" role="dialog" aria-labelledby="modal8Title">
+      <div class="modal-card">
+        <button class="modal-close" aria-label="Close modal">&times;</button>
+        <h2 id="modal8Title">Krisp URL Shortener</h2>
+        <p class="modal-intro">Analytics-driven link shortening platform.</p>
+        <div class="modal-body-content">
+          <h4>Overview</h4>
+          <p>A URL shortener with analytics, click tracking, and redirection management.</p>
+          <h4>Features</h4>
+          <ul>
+            <li>Unique hash generation matching target long URLs.</li>
+            <li>Metrics logs tracking user click counts, referrers, and timestamps.</li>
+            <li>Redirections speed optimizations handling database lookup pathways.</li>
+          </ul>
+          <h4>Tech Stack</h4>
+          <div class="modal-tech-tags-list">
+            <span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>EJS</span>
+          </div>
+          <h4>Challenges</h4>
+          <p>Ensuring URL hash uniqueness and managing quick redirection speeds for high-traffic redirects.</p>
+          <h4>Future Improvements</h4>
+          <p>Add custom domain linking support and create visual click analytics charts.</p>
+        </div>
+        <div class="modal-footer-actions">
+          <a href="https://github.com/Arif1258/Krisp" target="_blank" class="btn primary-btn-glow">Source Code</a>
+          <button class="btn secondary-btn-border modal-dismiss-btn">Dismiss</button>
+        </div>
+      </div>
+    </div>
+
   </div>
-  <div class="orb-label">COMMANDER PROFILE</div>
-</div>
 
-</div>
-</section>
+  <!-- FOOTER SECTION -->
+  <footer id="portfolio-footer">
+    <div class="footer-container">
+      
+      <!-- Achievement Highlights Row -->
+      <div class="footer-highlights-row">
+        <div class="footer-highlight-pill"><span class="pill-icon">🏆</span> IIT Kharagpur Incubation</div>
+        <div class="footer-highlight-pill"><span class="pill-icon">🥇</span> Anveshan AIU Winner</div>
+        <div class="footer-highlight-pill"><span class="pill-icon">♟️</span> 2&times; District Chess Champion</div>
+        <div class="footer-highlight-pill"><span class="pill-icon">💻</span> 250+ LeetCode Problems</div>
+      </div>
+      
+      <hr class="footer-divider">
 
-<div id="orb"></div>
-<div id="trail-container"></div>
+      <!-- Main Footer Columns -->
+      <div class="footer-main-columns">
+        
+        <!-- Column 1: Personal Brand Block -->
+        <div class="footer-col brand-col">
+          <div class="footer-brand-wrap">
+            <div class="footer-brand-badge">SA</div>
+            <div class="footer-brand-info">
+              <span class="footer-brand-name">SK ARIF AHMED</span>
+              <span class="footer-brand-sub">Software Engineer</span>
+            </div>
+          </div>
+          <p class="footer-brand-desc">
+            Full Stack Developer &amp; DevOps Enthusiast focused on building secure distributed systems and automated cloud-native infrastructures.
+          </p>
+          
+          <!-- Technology Badges Pill Grid -->
+          <div class="footer-tech-badges">
+            <span class="tech-pill">Java</span>
+            <span class="tech-pill">React</span>
+            <span class="tech-pill">Node.js</span>
+            <span class="tech-pill">MongoDB</span>
+            <span class="tech-pill">Docker</span>
+            <span class="tech-pill">AWS</span>
+          </div>
+        </div>
 
-<!-- ABOUT -->
-<section id="about">
-<div class="panel about-panel">
-<h2>About Me</h2>
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col links-col">
+          <h3>Quick Links</h3>
+          <ul class="footer-links-grid">
+            <li><a href="#hero" class="footer-link-item">Home</a></li>
+            <li><a href="#about" class="footer-link-item">About</a></li>
+            <li><a href="#skills" class="footer-link-item">Skills</a></li>
+            <li><a href="#achievements" class="footer-link-item">Achievements</a></li>
+            <li><a href="#projects" class="footer-link-item">Projects</a></li>
+            <li><a href="#timeline" class="footer-link-item">Experience</a></li>
+            <li><a href="#education" class="footer-link-item">Education</a></li>
+            <li><a href="Arif_Resume.pdf" download class="footer-link-item">Resume</a></li>
+            <li><a href="#contact" class="footer-link-item">Contact</a></li>
+          </ul>
+        </div>
 
-<div class="about-console">
-<p id="about-text">
-▣ INITIALIZING PROFILE...
+        <!-- Column 3: Connect Links -->
+        <div class="footer-col connect-col">
+          <h3>Connect</h3>
+          <div class="footer-social-grid">
+            <a href="https://github.com/Arif1258" target="_blank" class="social-link-card">
+              <div class="social-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              </div>
+              <span class="social-label">GitHub</span>
+            </a>
+            
+            <a href="https://linkedin.com/in/arif1258" target="_blank" class="social-link-card">
+              <div class="social-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              </div>
+              <span class="social-label">LinkedIn</span>
+            </a>
+            
+            <a href="mailto:skarifahmedofficial@gmail.com" class="social-link-card">
+              <div class="social-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <span class="social-label">Email</span>
+            </a>
+            
+            <a href="https://leetcode.com/arif1258" target="_blank" class="social-link-card">
+              <div class="social-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <span class="social-label">LeetCode</span>
+            </a>
+          </div>
+        </div>
 
-> I am a Computer Science undergraduate focused on building scalable and secure software systems. My work centers around backend development, distributed systems, and DevOps practices.
+      </div>
 
-> I have hands-on experience in full-stack development, authentication systems, and database optimization. I actively apply Data Structures and Algorithms to write efficient and maintainable code.
+      <hr class="footer-divider">
 
-> I have worked on real-world systems involving Docker, Kubernetes, and monitoring tools like Prometheus and Grafana.
+      <!-- Bottom Quote & Copyright Row -->
+      <div class="footer-bottom-row">
+        <p class="footer-quote">
+          &ldquo;Building scalable software, solving real-world problems, and continuously learning.&rdquo;
+        </p>
+        <p class="footer-copyright">
+          &copy; 2026 SK ARIF AHMED &bull; Built with &hearts; using React, JavaScript &amp; Three.js
+        </p>
+      </div>
 
-> My goal is to become a Software Engineer capable of designing, building, and deploying reliable production-grade systems.
-</p>
-</div>
-</div>
-</section>
+    </div>
+  </footer>
 
-<!-- SKILLS -->
-<section id="skills">
-<h2 class="skills-title">SKILLS</h2>
-
-<div class="skill-field" id="skillField">
-
-<div class="skill-btn">Java</div>
-<div class="skill-btn">JavaScript</div>
-<div class="skill-btn">Python</div>
-<div class="skill-btn">PHP</div>
-<div class="skill-btn">SQL</div>
-
-<div class="skill-btn">HTML5</div>
-<div class="skill-btn">CSS3</div>
-<div class="skill-btn">React</div>
-
-<div class="skill-btn">Node.js</div>
-<div class="skill-btn">Express.js</div>
-<div class="skill-btn">REST APIs</div>
-
-<div class="skill-btn">MongoDB</div>
-<div class="skill-btn">Redis</div>
-
-<div class="skill-btn">Docker</div>
-<div class="skill-btn">Kubernetes</div>
-<div class="skill-btn">AWS EC2</div>
-<div class="skill-btn">Jenkins</div>
-<div class="skill-btn">GitHub Actions</div>
-
-<div class="skill-btn">Prometheus</div>
-<div class="skill-btn">Grafana</div>
-
-<div class="skill-btn">Git</div>
-<div class="skill-btn">Linux</div>
-
-</div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects">
-<h2 class="proj-title">PROJECTS</h2>
-
-<div class="wheel-wrapper">
-<div class="wheel">
-
-<div class="card">
-<h3>Buyora</h3>
-<div class="mini">
-<p>Scalable MERN e-commerce platform with DevOps stack.</p>
-<div class="actions">
-<a href="#" target="_blank">View Code ↗</a>
-<button class="view-more" data-modal="modal1">View More</button>
-</div>
-</div>
-</div>
-
-<div class="card">
-<h3>SigmaGPT</h3>
-<div class="mini">
-<p>AI SaaS platform with authentication & subscriptions.</p>
-<div class="actions">
-<a href="#" target="_blank">View Code ↗</a>
-<button class="view-more" data-modal="modal2">View More</button>
-</div>
-</div>
-</div>
-
-<div class="card">
-<h3>SpaceCall</h3>
-<div class="mini">
-<p>Real-time WebRTC video calling platform.</p>
-<div class="actions">
-<a href="#" target="_blank">View Code ↗</a>
-<button class="view-more" data-modal="modal3">View More</button>
-</div>
-</div>
-</div>
-
-</div>
-</div>
-
-<!-- MODALS -->
-<div class="modal" id="modal1">
-<div class="modal-content modal-card">
-<button class="modal-close">&times;</button>
-<h2>Buyora</h2>
-<p>Deployed MERN system using Docker & Kubernetes with Redis caching and monitoring via Prometheus & Grafana.</p>
-</div>
-</div>
-
-<div class="modal" id="modal2">
-<div class="modal-content modal-card">
-<button class="modal-close">&times;</button>
-<h2>SigmaGPT</h2>
-<p>AI SaaS platform with JWT auth, Stripe billing, and Gemini API integration deployed using Docker.</p>
-</div>
-</div>
-
-<div class="modal" id="modal3">
-<div class="modal-content modal-card">
-<button class="modal-close">&times;</button>
-<h2>SpaceCall</h2>
-<p>Real-time WebRTC app using Socket.io signaling with authentication and reconnection handling.</p>
-</div>
-</div>
-
-</section>
-
-<!-- EDUCATION -->
-<section id="education">
-<h2 class="section-title">Education</h2>
-
-<div class="education-box">
-<div class="education-item"> Class 1 to class 10 - Egra Public School (ICSE)</div>
-<div class="education-item">Class 11 & 12 - Mount Litera Zee School (CBSE)</div>
-<div class="education-item">B.Tech CSE - Adamas University (2022–2026)</div>
-</div>
-</section>
-
-<!-- RESUME -->
-<section id="resume">
-<h2 class="section-title glow-text">Resume</h2>
-
-<div class="resume-box">
-<p class="resume-copy">Download my latest resume.</p>
-<a href="Arif_Resume.pdf" download class="resume-btn">
-Download Resume →
-</a>
-</div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-<h2 class="section-title glow-text">Contact</h2>
-
-<div class="contact-box">
-
-<div class="links">
-<a href="https://github.com/Arif1258" target="_blank">1. GitHub</a>
-
-</div>
-<div class="links">
-
-<a href="https://www.linkedin.com/in/skarifahmed/" target="_blank">2. LinkedIn</a>
-</div>
-
-<p>3. Email: skarifahmedofficial@gmail.com</p>
-
-</div>
-</section>
-
-</main>
-
-<script src="https://cdn.jsdelivr.net/npm/three@0.160/build/three.min.js"></script>
-<script src="script.js"></script>
-
+  <!-- WebGL Three.js libraries & custom scripts links -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160/build/three.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
