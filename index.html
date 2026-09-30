@@ -3,9 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sk Arif Ahmed </title>
-  <meta name="description" content="Portfolio of Sk Arif Ahmed, highlighting software development internships, cybersecurity research, scalable MERN systems, Docker, Kubernetes, and Cloud workflows.">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title>SK Arif Ahmed | Full Stack Developer & AI Engineer</title>
+  <meta name="description" content="Portfolio of SK Arif Ahmed — Full Stack Developer building AI-powered, real-time, and scalable web applications.">
+  <meta name="keywords" content="SK Arif Ahmed, Full Stack Developer, AI Engineer, Backend Engineer, Node.js, React, Express, MongoDB, RabbitMQ, Redis, Socket.io, OpenAI API">
+  <meta name="author" content="SK Arif Ahmed">
+  
+  <!-- Open Graph / Facebook / LinkedIn Metadata -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SK Arif Ahmed | Full Stack Developer & AI Engineer">
+  <meta property="og:description" content="Portfolio of SK Arif Ahmed — Full Stack Developer building AI-powered, real-time, and scalable web applications.">
+  <meta property="og:image" content="img.jpg">
+  
+  <!-- Twitter Card Metadata -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SK Arif Ahmed | Full Stack Developer & AI Engineer">
+  <meta name="twitter:description" content="Portfolio of SK Arif Ahmed — Full Stack Developer building AI-powered, real-time, and scalable web applications.">
+  <meta name="twitter:image" content="img.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%230f172a'/><text x='50%' y='55%' dominant-baseline='central' text-anchor='middle' fill='%2306b6d4' font-size='50' font-family='sans-serif' font-weight='bold'>SA</text></svg>">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -24,13 +42,13 @@
   <header id="portfolio-header">
     <nav aria-label="Main Navigation">
       <!-- Left side: Brand Logo & Details -->
-      <div class="brand-container">
+      <a href="#hero" class="brand-container" style="text-decoration: none;">
         <div class="brand-badge">SA</div>
         <div class="brand-info">
           <span class="brand-name">SK ARIF AHMED</span>
-          <span class="brand-title">Software Engineer</span>
+          <span class="brand-title">Full Stack &amp; AI Engineer</span>
         </div>
-      </div>
+      </a>
       
       <!-- Hamburger Toggle Trigger (Mobile viewports) -->
       <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navList" aria-label="Open navigation menu">
@@ -60,33 +78,21 @@
           </a>
         </li>
         <li>
-          <a href="#achievements" class="nav-item-link">
-            <span class="nav-icon">🏆</span>
-            <span class="nav-text">Achievements</span>
-          </a>
-        </li>
-        <li>
           <a href="#projects" class="nav-item-link">
             <span class="nav-icon">💻</span>
             <span class="nav-text">Projects</span>
           </a>
         </li>
         <li>
-          <a href="#timeline" class="nav-item-link">
+          <a href="#experience" class="nav-item-link">
             <span class="nav-icon">🚀</span>
             <span class="nav-text">Experience</span>
           </a>
         </li>
         <li>
-          <a href="#education" class="nav-item-link">
-            <span class="nav-icon">🎓</span>
-            <span class="nav-text">Education</span>
-          </a>
-        </li>
-        <li>
-          <a href="#resume" class="nav-item-link">
-            <span class="nav-icon">📄</span>
-            <span class="nav-text">Resume</span>
+          <a href="#achievements" class="nav-item-link">
+            <span class="nav-icon">🏆</span>
+            <span class="nav-text">Achievements</span>
           </a>
         </li>
         <li>
@@ -99,7 +105,10 @@
 
       <!-- Right side: Download Resume CTA trigger -->
       <div class="header-right">
-        <a href="Arif_Resume.pdf" download class="nav-resume-btn">Download Resume</a>
+        <a href="Arif_Resume.pdf" download class="nav-resume-btn">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Download Resume
+        </a>
       </div>
     </nav>
   </header>
@@ -112,24 +121,39 @@
       <div class="hero-dual">
         <!-- Left Side: Profile Text Summary and Stats -->
         <div class="panel hero-left-panel">
-          <span class="hero-label">SOFTWARE DEVELOPER</span>
+          <span class="hero-label">FULL STACK DEVELOPER | AI &amp; BACKEND ENGINEER</span>
           <h1 class="hero-name-heading">
             SK ARIF AHMED
           </h1>
           <p class="hero-tagline-text">
-            Building scalable applications, secure distributed systems, and automated cloud-native infrastructures.
+            I engineer production-ready full-stack applications, intelligent AI-powered products, low-latency real-time systems, and scalable backend architectures.
           </p>
           <div class="hero-badges-row">
-            <span class="hero-badge-tag"><span class="badge-icon">🏆</span> IIT Kharagpur Incubation</span>
-            <span class="hero-badge-tag"><span class="badge-icon">🥇</span> Anveshan AIU Winner</span>
+            <span class="hero-badge-tag"><span class="badge-icon">🏆</span> Selected for Incubation @ IIT Kharagpur</span>
+            <span class="hero-badge-tag"><span class="badge-icon">🥇</span> 1st Prize Anveshan AIU (Zonal East)</span>
             <span class="hero-badge-tag"><span class="badge-icon">♟️</span> 2× District Chess Champion</span>
           </div>
           <p class="hero-desc-p">
-            B.Tech Computer Science student with hands-on software development internships and research experience in secure container orchestration.
+            Computer Science engineer with hands-on software development internships and international cybersecurity research experience. Passionate about building reliable distributed architectures, event-driven pipelines, and LLM-assisted applications.
           </p>
+          <!-- Strong 4 CTA Buttons -->
           <div class="hero-actions-row">
-            <a href="#projects" class="btn primary-btn-glow">Explore Work</a>
-            <a href="#contact" class="btn secondary-btn-border">Contact Me</a>
+            <a href="#projects" class="btn hero-btn-primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              View Projects
+            </a>
+            <a href="https://github.com/Arif1258" target="_blank" class="btn hero-btn-secondary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/skarifahmed/" target="_blank" class="btn hero-btn-secondary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              LinkedIn
+            </a>
+            <a href="#contact" class="btn hero-btn-secondary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              Contact Me
+            </a>
           </div>
           <!-- Hero Quick Stats Grid -->
           <div class="hero-stats-grid">
@@ -138,16 +162,16 @@
               <span class="stat-title">DSA Solved</span>
             </div>
             <div class="hero-stat-card">
-              <span class="stat-number">10+</span>
-              <span class="stat-title">Projects</span>
+              <span class="stat-number">15+</span>
+              <span class="stat-title">Engineered Builds</span>
             </div>
             <div class="hero-stat-card">
               <span class="stat-number">3</span>
-              <span class="stat-title">Internships</span>
+              <span class="stat-title">Internships &amp; Research</span>
             </div>
             <div class="hero-stat-card">
               <span class="stat-number">2026</span>
-              <span class="stat-title">Graduation</span>
+              <span class="stat-title">B.Tech Graduation</span>
             </div>
           </div>
         </div>
@@ -156,10 +180,22 @@
         <div class="hero-right-wrap">
           <div class="portrait-glowing-frame">
             <div class="rotating-glow-border"></div>
+            
+            <!-- Floating Engineering Chips -->
+            <div class="floating-tech-chip floating-chip-1">⚡ Node.js &amp; Express</div>
+            <div class="floating-tech-chip floating-chip-2">🤖 OpenAI &amp; GenAI</div>
+            <div class="floating-tech-chip floating-chip-3">⚛️ React &amp; Next.js</div>
+            <div class="floating-tech-chip floating-chip-4">🔄 Redis &amp; RabbitMQ</div>
+
             <div class="avatar-holder">
-              <img src="img.jpg" class="hero-profile-image" alt="Sk Arif Ahmed Portfolio Profile Image" loading="lazy">
+              <img src="img.jpg" class="hero-profile-image" alt="Sk Arif Ahmed - Full Stack Developer &amp; AI Engineer" loading="lazy">
             </div>
-            <span class="avatar-sub-tag">SK ARIF AHMED</span>
+            
+            <!-- Live Availability Status Pill -->
+            <div class="hero-status-pill">
+              <span class="status-dot-pulse"></span>
+              Available for Opportunities
+            </div>
           </div>
         </div>
       </div>
@@ -169,34 +205,42 @@
     <section id="about" aria-label="About Me Terminal and Quick Facts">
       <div class="panel about-panel">
         <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">Full-stack engineer building AI-driven, real-time, and resilient backend systems.</p>
         <div class="about-two-columns">
           <!-- Left bio console terminal -->
           <div class="bio-console-card">
-            <pre class="terminal-text-box" id="about-text">▣ SYSTEM DIAGNOSTICS: READY.</pre>
+            <pre class="terminal-text-box" id="about-text">▣ SYSTEM DIAGNOSTICS: INITIALIZING...
+> CANDIDATE : Sk Arif Ahmed
+> SPECIALTY : Full Stack Developer | AI & Backend Engineer
+> STATUS    : READY</pre>
           </div>
           <!-- Right quick facts grid -->
           <div class="quick-facts-card">
-            <h3>Quick Facts</h3>
+            <h3>Engineering Profile</h3>
             <table class="facts-table">
               <tr>
                 <th>Current Status</th>
-                <td>B.Tech CSE Student, Adamas University</td>
+                <td>B.Tech Computer Science &amp; Engineering, Adamas University (2026)</td>
               </tr>
               <tr>
-                <th>Focus Areas</th>
-                <td>Backend Engineering, Distributed Systems, DevOps</td>
+                <th>Core Pillars</th>
+                <td>Full-Stack Dev, Scalable Backends, AI Tool Calling, Real-Time Streaming</td>
               </tr>
               <tr>
-                <th>Primary Tech</th>
-                <td>Java, MERN Stack, Docker, Kubernetes, AWS, Redis</td>
+                <th>Key Tech Stack</th>
+                <td>Node.js, Express, React.js, Next.js, MongoDB, Redis, RabbitMQ, OpenAI API</td>
               </tr>
               <tr>
-                <th>Location</th>
-                <td>Kolkata, West Bengal, India</td>
+                <th>Distributed Arch</th>
+                <td>Event-driven queues, dynamic caching, WebSockets, geospatial indexing</td>
               </tr>
               <tr>
-                <th>Interests</th>
-                <td>Cloud Native Systems, Automation, Research, Chess</td>
+                <th>DevOps &amp; Cloud</th>
+                <td>Docker, Kubernetes, AWS, GitHub Actions CI/CD, Prometheus &amp; Grafana</td>
+              </tr>
+              <tr>
+                <th>Key Stations</th>
+                <td>Cybersecurity Intern @ UCC Ireland &bull; Software Intern @ KATSI Canada</td>
               </tr>
             </table>
           </div>
@@ -208,75 +252,136 @@
     <section id="skills" aria-label="Technical Skills categories grid">
       <div class="panel">
         <h2 class="section-title">Technical Skills</h2>
-        <p class="section-subtitle">Technologies and methodologies I utilize to design and deploy software.</p>
+        <p class="section-subtitle">Core technologies, frameworks, distributed systems, and tooling I use in production.</p>
+        
         <div class="skills-grid-wrapper">
-          <!-- Card 1: Languages -->
+          <!-- 1. Languages -->
           <div class="skill-card" tabindex="0">
-            <div class="skill-card-icon">💻</div>
-            <h3>Languages</h3>
-            <ul class="skill-badge-list">
-              <li>Java <span class="badge-level">Advanced</span></li>
-              <li>JavaScript <span class="badge-level">Advanced</span></li>
-              <li>Python <span class="badge-level">Intermediate</span></li>
-              <li>PHP <span class="badge-level">Intermediate</span></li>
-              <li>SQL <span class="badge-level">Intermediate</span></li>
-            </ul>
+            <div class="skill-card-top">
+              <div class="skill-card-icon">💻</div>
+              <h3>Languages</h3>
+            </div>
+            <div class="skill-pills-container">
+              <span class="skill-pill"><span class="skill-pill-dot"></span>Java</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>JavaScript (ES6+)</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>Python</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>SQL</span>
+            </div>
           </div>
-          <!-- Card 2: Frontend -->
+
+          <!-- 2. Frontend -->
           <div class="skill-card" tabindex="0">
-            <div class="skill-card-icon">⚛️</div>
-            <h3>Frontend</h3>
-            <ul class="skill-badge-list">
-              <li>HTML5 <span class="badge-level">Advanced</span></li>
-              <li>CSS3 <span class="badge-level">Advanced</span></li>
-              <li>React <span class="badge-level">Intermediate</span></li>
-              <li>Tailwind CSS <span class="badge-level">Intermediate</span></li>
-            </ul>
+            <div class="skill-card-top">
+              <div class="skill-card-icon">⚛️</div>
+              <h3>Frontend</h3>
+            </div>
+            <div class="skill-pills-container">
+              <span class="skill-pill"><span class="skill-pill-dot"></span>React.js</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>Next.js</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>HTML5</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>CSS3</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>Tailwind CSS</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>Material UI</span>
+            </div>
           </div>
-          <!-- Card 3: Backend -->
+
+          <!-- 3. Backend -->
           <div class="skill-card" tabindex="0">
-            <div class="skill-card-icon">⚙️</div>
-            <h3>Backend</h3>
-            <ul class="skill-badge-list">
-              <li>Node.js <span class="badge-level">Advanced</span></li>
-              <li>Express.js <span class="badge-level">Advanced</span></li>
-              <li>REST APIs <span class="badge-level">Advanced</span></li>
-              <li>JWT Auth <span class="badge-level">Advanced</span></li>
-            </ul>
+            <div class="skill-card-top">
+              <div class="skill-card-icon">⚙️</div>
+              <h3>Backend</h3>
+            </div>
+            <div class="skill-pills-container">
+              <span class="skill-pill"><span class="skill-pill-dot"></span>Node.js</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>Express.js</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>RESTful APIs</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>JWT Authentication</span>
+            </div>
           </div>
-          <!-- Card 4: Databases -->
+
+          <!-- 4. Databases -->
           <div class="skill-card" tabindex="0">
-            <div class="skill-card-icon">🍃</div>
-            <h3>Databases</h3>
-            <ul class="skill-badge-list">
-              <li>MongoDB <span class="badge-level">Intermediate</span></li>
-              <li>MySQL <span class="badge-level">Intermediate</span></li>
-              <li>Redis <span class="badge-level">Intermediate</span></li>
-            </ul>
+            <div class="skill-card-top">
+              <div class="skill-card-icon">🗄️</div>
+              <h3>Databases</h3>
+            </div>
+            <div class="skill-pills-container">
+              <span class="skill-pill"><span class="skill-pill-dot"></span>MongoDB</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>MySQL</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>Redis (Caching)</span>
+            </div>
           </div>
-          <!-- Card 5: DevOps & Cloud -->
+
+          <!-- 5. Messaging / Distributed Systems -->
           <div class="skill-card" tabindex="0">
-            <div class="skill-card-icon">🐳</div>
-            <h3>DevOps & Cloud</h3>
-            <ul class="skill-badge-list">
-              <li>Docker <span class="badge-level">Advanced</span></li>
-              <li>Kubernetes <span class="badge-level">Intermediate</span></li>
-              <li>AWS EC2 <span class="badge-level">Intermediate</span></li>
-              <li>Jenkins <span class="badge-level">Intermediate</span></li>
-              <li>GitHub Actions <span class="badge-level">Intermediate</span></li>
-              <li>Prometheus / Grafana <span class="badge-level">Intermediate</span></li>
-            </ul>
+            <div class="skill-card-top">
+              <div class="skill-card-icon">🔄</div>
+              <h3>Messaging &amp; Distributed</h3>
+            </div>
+            <div class="skill-pills-container">
+              <span class="skill-pill"><span class="skill-pill-dot"></span>RabbitMQ</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>Apache Kafka</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>Socket.io (WebSockets)</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>Event-Driven Arch</span>
+            </div>
           </div>
-          <!-- Card 6: Tools -->
+
+          <!-- 6. AI -->
           <div class="skill-card" tabindex="0">
-            <div class="skill-card-icon">🛠️</div>
-            <h3>Tools</h3>
-            <ul class="skill-badge-list">
-              <li>Git / GitHub <span class="badge-level">Advanced</span></li>
-              <li>Linux / Bash <span class="badge-level">Intermediate</span></li>
-              <li>Postman <span class="badge-level">Advanced</span></li>
-              <li>VS Code <span class="badge-level">Advanced</span></li>
-            </ul>
+            <div class="skill-card-top">
+              <div class="skill-card-icon">🤖</div>
+              <h3>Artificial Intelligence</h3>
+            </div>
+            <div class="skill-pills-container">
+              <span class="skill-pill"><span class="skill-pill-dot"></span>OpenAI API</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>GenAI</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>Function Calling</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>LLM Tool Grounding</span>
+            </div>
+          </div>
+
+          <!-- 7. DevOps / Cloud -->
+          <div class="skill-card" tabindex="0">
+            <div class="skill-card-top">
+              <div class="skill-card-icon">☁️</div>
+              <h3>DevOps &amp; Cloud</h3>
+            </div>
+            <div class="skill-pills-container">
+              <span class="skill-pill"><span class="skill-pill-dot"></span>AWS</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>Docker</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>Kubernetes</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>GitHub Actions (CI/CD)</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>Render</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>Vercel</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>Netlify</span>
+            </div>
+          </div>
+
+          <!-- 8. Monitoring -->
+          <div class="skill-card" tabindex="0">
+            <div class="skill-card-top">
+              <div class="skill-card-icon">📊</div>
+              <h3>Observability &amp; Monitoring</h3>
+            </div>
+            <div class="skill-pills-container">
+              <span class="skill-pill"><span class="skill-pill-dot"></span>Prometheus</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>Grafana</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>Loki</span>
+            </div>
+          </div>
+
+          <!-- 9. Tools -->
+          <div class="skill-card" tabindex="0">
+            <div class="skill-card-top">
+              <div class="skill-card-icon">🛠️</div>
+              <h3>Developer Tools</h3>
+            </div>
+            <div class="skill-pills-container">
+              <span class="skill-pill"><span class="skill-pill-dot"></span>Git &amp; GitHub</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>Postman</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>Linux / Bash</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>N8N (Automation)</span>
+            </div>
           </div>
         </div>
       </div>
@@ -285,37 +390,384 @@
     <!-- 4. PROJECTS -->
     <section id="projects" aria-label="Featured Software Engineering Builds Showcase">
       <div class="panel">
-        <h2 class="section-title">Featured Projects</h2>
-        <p class="section-subtitle">Web applications and platforms engineered with modern scalable tech stacks.</p>
-        <div class="projects-grid-container">
-          
-          <!-- Project 0: BiteDash -->
-          <div class="project-showcase-card" tabindex="0">
-            <div class="project-img-placeholder">
-              <span>🍔 BiteDash Marketplace</span>
+        <h2 class="section-title">Engineering Architecture &amp; Featured Projects</h2>
+        <p class="section-subtitle">Scalable backends, real-time distributed pipelines, and production AI platforms built by Sk Arif Ahmed.</p>
+        
+        <!-- ENGINEERING HIGHLIGHTS SECTION -->
+        <div class="highlights-section-header" style="margin-top: 2rem; margin-bottom: 1.25rem;">
+          <div class="hero-status-pill" style="display: inline-flex; margin-bottom: 0.5rem; background: rgba(59, 130, 246, 0.1); border-color: rgba(59, 130, 246, 0.3); color: #60a5fa;">
+            <span class="pulse-dot" style="background: #3b82f6;"></span> ARCHITECTURAL CORE
+          </div>
+          <h3 style="font-size: 1.45rem; font-weight: 700; color: #f8fafc; letter-spacing: -0.01em;">Engineering Highlights</h3>
+          <p style="color: #94a3b8; font-size: 0.95rem; margin-top: 0.25rem;">Key distributed architectural patterns and engineering paradigms implemented across projects.</p>
+        </div>
+        <div class="engineering-highlights-deck">
+          <!-- 1. AI Integration -->
+          <div class="eng-highlight-card">
+            <div class="eng-highlight-header">
+              <div class="eng-highlight-icon">🤖</div>
+              <h3 class="eng-highlight-title">AI Integration</h3>
             </div>
-            <div class="card-inner-pad">
-              <div class="project-header">
-                <h3>BiteDash</h3>
-                <span class="project-metric">🚀 Live Platform</span>
+            <p class="eng-highlight-desc">Engineering LLM pipelines, OpenAI function calling with authenticated toolsets, contextual support agents, and deterministic fallbacks.</p>
+            <div class="eng-highlight-chips">
+              <span class="eng-chip">OpenAI APIs</span>
+              <span class="eng-chip">Function Calling</span>
+              <span class="eng-chip">GenAI Assistants</span>
+              <span class="eng-chip">Tool Grounding</span>
+            </div>
+          </div>
+
+          <!-- 2. Real-Time Systems -->
+          <div class="eng-highlight-card">
+            <div class="eng-highlight-header">
+              <div class="eng-highlight-icon">⚡</div>
+              <h3 class="eng-highlight-title">Real-Time Systems</h3>
+            </div>
+            <p class="eng-highlight-desc">Bi-directional WebSockets, multi-room signaling, low-latency live dispatching, rider telemetry, and instant state synchronization.</p>
+            <div class="eng-highlight-chips">
+              <span class="eng-chip">Socket.io</span>
+              <span class="eng-chip">WebRTC</span>
+              <span class="eng-chip">Redis Pub/Sub</span>
+              <span class="eng-chip">Live Geolocation</span>
+            </div>
+          </div>
+
+          <!-- 3. Backend Engineering -->
+          <div class="eng-highlight-card">
+            <div class="eng-highlight-header">
+              <div class="eng-highlight-icon">⚙️</div>
+              <h3 class="eng-highlight-title">Backend Engineering</h3>
+            </div>
+            <p class="eng-highlight-desc">High-throughput RESTful services, strict JWT authentication, role-based access control, transaction atomicity, and rate limiting.</p>
+            <div class="eng-highlight-chips">
+              <span class="eng-chip">Node.js</span>
+              <span class="eng-chip">Express.js</span>
+              <span class="eng-chip">MongoDB</span>
+              <span class="eng-chip">Redis Buffers</span>
+            </div>
+          </div>
+
+          <!-- 4. Intelligent Systems -->
+          <div class="eng-highlight-card">
+            <div class="eng-highlight-header">
+              <div class="eng-highlight-icon">🧠</div>
+              <h3 class="eng-highlight-title">Intelligent Systems</h3>
+            </div>
+            <p class="eng-highlight-desc">Multi-criteria driver matching, historical demand heatmaps, route batching heuristics, and traffic-aware dynamic ETA estimation.</p>
+            <div class="eng-highlight-chips">
+              <span class="eng-chip">ETA Prediction</span>
+              <span class="eng-chip">Demand Forecasting</span>
+              <span class="eng-chip">Matching Algorithms</span>
+              <span class="eng-chip">Anomaly Checks</span>
+            </div>
+          </div>
+
+          <!-- 5. Distributed Architecture -->
+          <div class="eng-highlight-card">
+            <div class="eng-highlight-header">
+              <div class="eng-highlight-icon">🔄</div>
+              <h3 class="eng-highlight-title">Distributed Architecture</h3>
+            </div>
+            <p class="eng-highlight-desc">Decoupled microservice communications, asynchronous task queues for heavy writes, cache invalidation, and fault-tolerant failovers.</p>
+            <div class="eng-highlight-chips">
+              <span class="eng-chip">RabbitMQ</span>
+              <span class="eng-chip">Redis Caching</span>
+              <span class="eng-chip">Async Pipelines</span>
+              <span class="eng-chip">Apache Kafka</span>
+            </div>
+          </div>
+
+          <!-- 6. Cloud & DevOps -->
+          <div class="eng-highlight-card">
+            <div class="eng-highlight-header">
+              <div class="eng-highlight-icon">☁️</div>
+              <h3 class="eng-highlight-title">Cloud &amp; DevOps</h3>
+            </div>
+            <p class="eng-highlight-desc">Containerized microservices with Docker, Kubernetes cluster orchestration, AWS cloud deployments, and automated GitHub Actions CI/CD.</p>
+            <div class="eng-highlight-chips">
+              <span class="eng-chip">Docker</span>
+              <span class="eng-chip">Kubernetes</span>
+              <span class="eng-chip">AWS EC2</span>
+              <span class="eng-chip">GitHub Actions</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- FLAGSHIP PROJECTS SHOWCASE -->
+        <div class="flagship-section-header">
+          <span class="flagship-label-badge">★ Flagship Production Platforms</span>
+          <h3 style="font-size: 20px; font-weight: 700; color: #ffffff;">Major Full-Stack &amp; AI Systems</h3>
+        </div>
+
+        <div class="flagship-showcase-grid">
+          
+          <!-- FLAGSHIP 1: BiteDash -->
+          <div class="flagship-project-card" tabindex="0">
+            <div class="flagship-mockup-frame">
+              <span class="flagship-badge-floating">★ Flagship Platform</span>
+              <!-- Custom SVG Command Center Mockup -->
+              <svg viewBox="0 0 540 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="540" height="200" rx="12" fill="#080d1a"/>
+                <!-- Header bar -->
+                <rect x="16" y="16" width="508" height="34" rx="8" fill="#0f172a" stroke="#1e293b"/>
+                <circle cx="34" cy="33" r="5" fill="#10b981"/>
+                <text x="46" y="37" fill="#f8fafc" font-size="12" font-family="'Inter', sans-serif" font-weight="600">BiteDash Dispatch Engine</text>
+                <rect x="410" y="23" width="100" height="20" rx="10" fill="#06b6d4" fill-opacity="0.15" stroke="#06b6d4" stroke-opacity="0.4"/>
+                <text x="460" y="37" fill="#06b6d4" font-size="10" font-family="'Inter', sans-serif" font-weight="700" text-anchor="middle">LIVE SOCKET.IO</text>
+                
+                <!-- Card Left: Dynamic ETA -->
+                <rect x="16" y="62" width="246" height="122" rx="10" fill="#0c1322" stroke="#1e293b"/>
+                <text x="32" y="85" fill="#94a3b8" font-size="11" font-family="'Inter', sans-serif" font-weight="600">DYNAMIC ETA PREDICTION</text>
+                <text x="32" y="118" fill="#38bdf8" font-size="28" font-family="'Outfit', sans-serif" font-weight="800">18m 42s</text>
+                <text x="32" y="138" fill="#cbd5e1" font-size="11" font-family="'Inter', sans-serif">Kitchen Load: 82% &bull; Distance: 2.8 km</text>
+                <rect x="32" y="152" width="140" height="20" rx="6" fill="#10b981" fill-opacity="0.1" stroke="#10b981" stroke-opacity="0.3"/>
+                <text x="102" y="166" fill="#10b981" font-size="10" font-family="'Inter', sans-serif" font-weight="600" text-anchor="middle">Batched Route #41B</text>
+
+                <!-- Card Right: GenAI Support & GeoJSON -->
+                <rect x="278" y="62" width="246" height="122" rx="10" fill="#0c1322" stroke="#1e293b"/>
+                <text x="294" y="85" fill="#94a3b8" font-size="11" font-family="'Inter', sans-serif" font-weight="600">GENAI FUNCTION CALLING</text>
+                <rect x="294" y="96" width="214" height="28" rx="6" fill="#1e1b4b" stroke="#6366f1" stroke-opacity="0.4"/>
+                <text x="304" y="114" fill="#a5b4fc" font-size="10" font-family="'Courier New', monospace" font-weight="600">tool: verifyOrderETA(id)</text>
+                <text x="294" y="145" fill="#94a3b8" font-size="10" font-family="'Inter', sans-serif">MongoDB GeoJSON Surplus Food Discovery</text>
+                <rect x="294" y="154" width="130" height="20" rx="6" fill="#f59e0b" fill-opacity="0.1" stroke="#f59e0b" stroke-opacity="0.3"/>
+                <text x="359" y="168" fill="#f59e0b" font-size="10" font-family="'Inter', sans-serif" font-weight="600" text-anchor="middle">TTL Index Active</text>
+              </svg>
+            </div>
+            
+            <div class="flagship-body">
+              <div class="flagship-title-wrap">
+                <h3 class="flagship-title">BiteDash — GenAI-Powered Food Marketplace &amp; Delivery Platform</h3>
+                <p class="flagship-tagline">"AI-powered food delivery with real-time ETA, intelligent support, geospatial discovery, and delivery optimization."</p>
               </div>
-              <p class="project-summary-desc">Multi-vendor food delivery platform with separate workflows for Customers, Sellers, Riders, and Admins. Features a dynamic smart order ETA engine, RabbitMQ event processing, Redis rate limiting, and geospatial surplus-food discovery.</p>
-              <div class="project-tech-tags">
-                <span>React.js</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>RabbitMQ</span><span>Redis</span><span>Socket.io</span><span>JWT</span><span>Stripe</span><span>Razorpay</span>
+              
+              <p class="flagship-desc">
+                BiteDash is a GenAI-powered multi-vendor food marketplace and delivery platform engineered around real-time order intelligence, delivery optimization, and AI-assisted customer support across four distinct user roles (Customers, Sellers, Riders, Admins).
+              </p>
+
+              <!-- Complexity indicators -->
+              <div class="flagship-metrics-grid">
+                <div class="metric-item">
+                  <span class="metric-item-label">Real-Time Core</span>
+                  <span class="metric-item-val">Socket.io + Redis Pub/Sub</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-item-label">AI Engine</span>
+                  <span class="metric-item-val">OpenAI Function Calling</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-item-label">Event Messaging</span>
+                  <span class="metric-item-val">RabbitMQ Task Queue</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-item-label">Geospatial Data</span>
+                  <span class="metric-item-val">MongoDB GeoJSON + TTL</span>
+                </div>
               </div>
-              <div class="project-actions-footer">
-                <a href="https://github.com/Arif1258/Bite-Dash" target="_blank" class="github-link">GitHub</a>
-                <a href="https://bitedash-frontend.vercel.app/" target="_blank" class="view-details-trigger-btn">Live Demo</a>
+
+              <!-- Tech Pills -->
+              <div class="flagship-tech-pills">
+                <span>React</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>RabbitMQ</span><span>Redis</span><span>Socket.io</span><span>Razorpay</span><span>OpenAI API</span>
               </div>
-              <div style="text-align: center; margin-top: 15px;">
-                <button class="view-details-trigger-btn" data-modal="modal-bitedash" style="background: transparent; border: none; color: var(--accent); cursor: pointer; text-decoration: underline; padding: 0; box-shadow: none; font-size: 11.5px; font-weight: 600; display: inline-block;">
-                  View System Architecture &amp; Features
+
+              <!-- Actions -->
+              <div class="flagship-actions-row">
+                <a href="https://bitedash-frontend-two.vercel.app/" target="_blank" class="btn-primary">
+                  <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  Live Demo
+                </a>
+                <a href="https://github.com/Arif1258/Bite-Dash" target="_blank" class="btn-secondary">
+                  <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  GitHub
+                </a>
+                <button class="btn-architecture view-details-trigger-btn" data-modal="modal-bitedash">
+                  <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+                  View Case Study &amp; Architecture
                 </button>
               </div>
             </div>
           </div>
 
-          <!-- Project 1: Movie Recommendation System -->
+          <!-- FLAGSHIP 2: Drivo -->
+          <div class="flagship-project-card" tabindex="0">
+            <div class="flagship-mockup-frame">
+              <span class="flagship-badge-floating">★ Flagship Platform</span>
+              <!-- Custom SVG Mobility Radar Mockup -->
+              <svg viewBox="0 0 540 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="540" height="200" rx="12" fill="#080d1a"/>
+                <!-- Header bar -->
+                <rect x="16" y="16" width="508" height="34" rx="8" fill="#0f172a" stroke="#1e293b"/>
+                <circle cx="34" cy="33" r="5" fill="#3b82f6"/>
+                <text x="46" y="37" fill="#f8fafc" font-size="12" font-family="'Inter', sans-serif" font-weight="600">Drivo Smart Mobility Radar</text>
+                <rect x="390" y="23" width="120" height="20" rx="10" fill="#3b82f6" fill-opacity="0.15" stroke="#3b82f6" stroke-opacity="0.4"/>
+                <text x="450" y="37" fill="#60a5fa" font-size="10" font-family="'Inter', sans-serif" font-weight="700" text-anchor="middle">ACTIVE DISPATCH</text>
+                
+                <!-- Card Left: Driver Matching Ring -->
+                <rect x="16" y="62" width="246" height="122" rx="10" fill="#0c1322" stroke="#1e293b"/>
+                <text x="32" y="85" fill="#94a3b8" font-size="11" font-family="'Inter', sans-serif" font-weight="600">SMART DRIVER MATCH</text>
+                <text x="32" y="118" fill="#60a5fa" font-size="28" font-family="'Outfit', sans-serif" font-weight="800">Driver #81</text>
+                <text x="32" y="138" fill="#cbd5e1" font-size="11" font-family="'Inter', sans-serif">Rating: 4.96 ★ &bull; Acceptance: 97%</text>
+                <rect x="32" y="152" width="165" height="20" rx="6" fill="#10b981" fill-opacity="0.1" stroke="#10b981" stroke-opacity="0.3"/>
+                <text x="114" y="166" fill="#10b981" font-size="10" font-family="'Inter', sans-serif" font-weight="600" text-anchor="middle">Optimal Match Distance: 1.1 km</text>
+
+                <!-- Card Right: Demand Hotspot & Telemetry -->
+                <rect x="278" y="62" width="246" height="122" rx="10" fill="#0c1322" stroke="#1e293b"/>
+                <text x="294" y="85" fill="#94a3b8" font-size="11" font-family="'Inter', sans-serif" font-weight="600">DEMAND &amp; TELEMETRY</text>
+                <rect x="294" y="96" width="214" height="28" rx="6" fill="#1e1b4b" stroke="#6366f1" stroke-opacity="0.4"/>
+                <text x="304" y="114" fill="#a5b4fc" font-size="10" font-family="'Inter', sans-serif" font-weight="600">Friday Fuel Surge Hotspot: +1.8km</text>
+                <text x="294" y="145" fill="#94a3b8" font-size="10" font-family="'Inter', sans-serif">GPS Telemetry: Realistic speed verification</text>
+                <rect x="294" y="154" width="145" height="20" rx="6" fill="#06b6d4" fill-opacity="0.1" stroke="#06b6d4" stroke-opacity="0.3"/>
+                <text x="366" y="168" fill="#06b6d4" font-size="10" font-family="'Inter', sans-serif" font-weight="600" text-anchor="middle">Traffic-Aware Dynamic ETA</text>
+              </svg>
+            </div>
+            
+            <div class="flagship-body">
+              <div class="flagship-title-wrap">
+                <h3 class="flagship-title">Drivo — AI-Driven Smart Ride-Hailing Platform</h3>
+                <p class="flagship-tagline">"AI-powered ride matching, demand prediction, intelligent ETA, anomaly detection, and real-time support."</p>
+              </div>
+              
+              <p class="flagship-desc">
+                Drivo is an AI-driven ride-hailing platform engineered with intelligent driver matching, demand prediction, traffic-aware ETA estimation, GPS anomaly spoofing detection, and a grounded GenAI customer support assistant.
+              </p>
+
+              <!-- Complexity indicators -->
+              <div class="flagship-metrics-grid">
+                <div class="metric-item">
+                  <span class="metric-item-label">Driver Matching</span>
+                  <span class="metric-item-val">Distance + Rating + History</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-item-label">Demand Engine</span>
+                  <span class="metric-item-val">Historical Hotspot Guidance</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-item-label">Traffic-Aware ETA</span>
+                  <span class="metric-item-val">Dynamic Congestion Model</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-item-label">AI Support</span>
+                  <span class="metric-item-val">Live Trip Grounding Agent</span>
+                </div>
+              </div>
+
+              <!-- Tech Pills -->
+              <div class="flagship-tech-pills">
+                <span>React</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>OpenAI API</span>
+              </div>
+
+              <!-- Actions -->
+              <div class="flagship-actions-row">
+                <a href="https://drivo-frontend-zeta.vercel.app/" target="_blank" class="btn-primary">
+                  <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  Live Demo
+                </a>
+                <a href="https://github.com/Arif1258/Drivo" target="_blank" class="btn-secondary">
+                  <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  GitHub
+                </a>
+                <button class="btn-architecture view-details-trigger-btn" data-modal="modal-drivo">
+                  <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+                  View Case Study &amp; Architecture
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- CATALOG DIVIDER HEADER -->
+        <div class="catalog-divider-header">
+          <h3 class="catalog-title">Engineering Projects &amp; Software Catalog</h3>
+          <p class="catalog-subtitle">Comprehensive showcase of real-time systems, machine learning applications, and full-stack software.</p>
+        </div>
+
+        <div class="projects-grid-container">
+
+          <!-- Project 3: SigmaGPT – AI Chat App -->
+          <div class="project-showcase-card" tabindex="0">
+            <div class="project-img-placeholder">
+              <span>💬 SigmaGPT Chat</span>
+            </div>
+            <div class="card-inner-pad">
+              <div class="project-header">
+                <h3>SigmaGPT AI Chat</h3>
+                <span class="project-metric">⚡ GPT Models</span>
+              </div>
+              <p class="project-summary-desc">An intelligent AI chat platform powered by GPT models with markdown rendering, message persistence, and responsive UI.</p>
+              <div class="project-tech-tags">
+                <span>React.js</span><span>Node.js</span><span>OpenAI API</span><span>Tailwind CSS</span>
+              </div>
+              <div class="project-actions-footer">
+                <a href="https://github.com/Arif1258/SigmaGPT" target="_blank" class="github-link">GitHub</a>
+                <button class="view-details-trigger-btn" data-modal="modal3">View Details</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: SpaceCall – Video Calling -->
+          <div class="project-showcase-card" tabindex="0">
+            <div class="project-img-placeholder">
+              <span>📹 SpaceCall Video</span>
+            </div>
+            <div class="card-inner-pad">
+              <div class="project-header">
+                <h3>SpaceCall Video</h3>
+                <span class="project-metric">📶 Low Latency</span>
+              </div>
+              <p class="project-summary-desc">Real-time peer-to-peer video conferencing platform built using WebRTC, Socket.io signaling, and custom room management.</p>
+              <div class="project-tech-tags">
+                <span>React.js</span><span>WebRTC</span><span>Socket.io</span><span>Node.js</span>
+              </div>
+              <div class="project-actions-footer">
+                <a href="https://github.com/Arif1258/SpaceCall" target="_blank" class="github-link">GitHub</a>
+                <button class="view-details-trigger-btn" data-modal="modal4">View Details</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5: CoolCare – AC Service Booking Platform -->
+          <div class="project-showcase-card" tabindex="0">
+            <div class="project-img-placeholder">
+              <span>🛠️ CoolCare Platform</span>
+            </div>
+            <div class="card-inner-pad">
+              <div class="project-header">
+                <h3>CoolCare</h3>
+                <span class="project-metric">🔧 On-Demand AC</span>
+              </div>
+              <p class="project-summary-desc">Full-stack on-demand technician matching platform with customer and technician portals, OTP job verification, wallet balance tracking, and admin dashboard.</p>
+              <div class="project-tech-tags">
+                <span>React.js</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>Tailwind CSS</span><span>JWT</span>
+              </div>
+              <div class="project-actions-footer">
+                <a href="https://github.com/Arif1258/CoolCare---AC-service-booking-site" target="_blank" class="github-link">GitHub</a>
+                <button class="view-details-trigger-btn" data-modal="modal-coolcare">View Details</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project: Stockyard (Zerodha Clone) -->
+          <div class="project-showcase-card" tabindex="0">
+            <div class="project-img-placeholder">
+              <span>📈 Stockyard Trading</span>
+            </div>
+            <div class="card-inner-pad">
+              <div class="project-header">
+                <h3>Stockyard Clone</h3>
+                <span class="project-metric">💰 Portfolio</span>
+              </div>
+              <p class="project-summary-desc">A trading platform clone with analytics dashboards, market tracking, order execution simulation, and portfolio management.</p>
+              <div class="project-tech-tags">
+                <span>React.js</span><span>Express.js</span><span>MongoDB</span>
+              </div>
+              <div class="project-actions-footer">
+                <a href="https://github.com/Arif1258/Stockyard" target="_blank" class="github-link">GitHub</a>
+                <button class="view-details-trigger-btn" data-modal="modal5">View Details</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project: Movie Recommendation System -->
           <div class="project-showcase-card" tabindex="0">
             <div class="project-img-placeholder">
               <span>🎬 Movie Rec System</span>
@@ -336,7 +788,7 @@
             </div>
           </div>
 
-          <!-- Project 2: Fake News Detector -->
+          <!-- Project: Fake News Detector -->
           <div class="project-showcase-card" tabindex="0">
             <div class="project-img-placeholder">
               <span>📊 Fake News Detector</span>
@@ -346,7 +798,7 @@
                 <h3>Fake News Detector</h3>
                 <span class="project-metric">🎯 NLP Accuracy</span>
               </div>
-              <p class="project-summary-desc">Detects fake news headlines using machine learning and natural language processing.</p>
+              <p class="project-summary-desc">Detects fake news headlines using machine learning classifiers and natural language processing techniques.</p>
               <div class="project-tech-tags">
                 <span>Python</span><span>Streamlit</span><span>NLP</span>
               </div>
@@ -357,91 +809,7 @@
             </div>
           </div>
 
-          <!-- Project 3: SigmaGPT – AI Chat App -->
-          <div class="project-showcase-card" tabindex="0">
-            <div class="project-img-placeholder">
-              <span>💬 SigmaGPT Chat</span>
-            </div>
-            <div class="card-inner-pad">
-              <div class="project-header">
-                <h3>SigmaGPT AI Chat</h3>
-                <span class="project-metric">⚡ GPT Models</span>
-              </div>
-              <p class="project-summary-desc">An intelligent AI chat platform powered by GPT models with a modern interface.</p>
-              <div class="project-tech-tags">
-                <span>React.js</span><span>Node.js</span><span>OpenAI API</span>
-              </div>
-              <div class="project-actions-footer">
-                <a href="https://github.com/Arif1258/SigmaGPT" target="_blank" class="github-link">GitHub</a>
-                <button class="view-details-trigger-btn" data-modal="modal3">View Details</button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 4: SpaceCall – Video Calling -->
-          <div class="project-showcase-card" tabindex="0">
-            <div class="project-img-placeholder">
-              <span>📹 SpaceCall Video</span>
-            </div>
-            <div class="card-inner-pad">
-              <div class="project-header">
-                <h3>SpaceCall Video</h3>
-                <span class="project-metric">📶 Low Latency</span>
-              </div>
-              <p class="project-summary-desc">Real-time video conferencing platform built using WebRTC and Socket.io.</p>
-              <div class="project-tech-tags">
-                <span>React.js</span><span>WebRTC</span><span>Socket.io</span>
-              </div>
-              <div class="project-actions-footer">
-                <a href="https://github.com/Arif1258/SpaceCall" target="_blank" class="github-link">GitHub</a>
-                <button class="view-details-trigger-btn" data-modal="modal4">View Details</button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 5: Stockyard (Zerodha Clone) -->
-          <div class="project-showcase-card" tabindex="0">
-            <div class="project-img-placeholder">
-              <span>📈 Stockyard Trading</span>
-            </div>
-            <div class="card-inner-pad">
-              <div class="project-header">
-                <h3>Stockyard Clone</h3>
-                <span class="project-metric">💰 Portfolio</span>
-              </div>
-              <p class="project-summary-desc">A trading platform clone with dashboards, market tracking, and portfolio management.</p>
-              <div class="project-tech-tags">
-                <span>React.js</span><span>Express.js</span><span>MongoDB</span>
-              </div>
-              <div class="project-actions-footer">
-                <a href="https://github.com/Arif1258/Stockyard" target="_blank" class="github-link">GitHub</a>
-                <button class="view-details-trigger-btn" data-modal="modal5">View Details</button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 6: Wanderlust (Hotel Booking) -->
-          <div class="project-showcase-card" tabindex="0">
-            <div class="project-img-placeholder">
-              <span>🏨 Wanderlust Booking</span>
-            </div>
-            <div class="card-inner-pad">
-              <div class="project-header">
-                <h3>Wanderlust Booking</h3>
-                <span class="project-metric">🔑 Authentication</span>
-              </div>
-              <p class="project-summary-desc">A full-stack hotel reservation system with authentication, filtering, and booking history.</p>
-              <div class="project-tech-tags">
-                <span>React.js</span><span>Node.js</span><span>MongoDB</span>
-              </div>
-              <div class="project-actions-footer">
-                <a href="https://github.com/Arif1258/Wanderlust" target="_blank" class="github-link">GitHub</a>
-                <button class="view-details-trigger-btn" data-modal="modal6">View Details</button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 7: Climatiya (Weather App) -->
+          <!-- Project: Climatiya (Weather App) -->
           <div class="project-showcase-card" tabindex="0">
             <div class="project-img-placeholder">
               <span>🌤️ Climatiya Weather</span>
@@ -451,7 +819,7 @@
                 <h3>Climatiya Weather</h3>
                 <span class="project-metric">🌧️ Real-Time</span>
               </div>
-              <p class="project-summary-desc">A clean weather application that fetches real-time weather information for any city.</p>
+              <p class="project-summary-desc">A clean weather application that fetches real-time weather information and multi-day forecasts for any city.</p>
               <div class="project-tech-tags">
                 <span>React.js</span><span>JavaScript</span><span>OpenWeather API</span>
               </div>
@@ -462,7 +830,7 @@
             </div>
           </div>
 
-          <!-- Project 8: Krisp (URL Shortener) -->
+          <!-- Project: Krisp (URL Shortener) -->
           <div class="project-showcase-card" tabindex="0">
             <div class="project-img-placeholder">
               <span>🔗 Krisp Shortener</span>
@@ -472,7 +840,7 @@
                 <h3>Krisp Shortener</h3>
                 <span class="project-metric">📊 Analytics</span>
               </div>
-              <p class="project-summary-desc">A URL shortener with analytics, click tracking, and redirection management.</p>
+              <p class="project-summary-desc">A URL shortener with analytics, click tracking, and fast redirection management.</p>
               <div class="project-tech-tags">
                 <span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>EJS</span>
               </div>
@@ -482,59 +850,27 @@
               </div>
             </div>
           </div>
+
+          <!-- Project: DeliveryHub -->
           <div class="project-showcase-card" tabindex="0">
-    <div class="project-img-placeholder">
-        <span>🍔 DeliveryHub</span>
-    </div>
-    <div class="card-inner-pad">
-        <div class="project-header">
-            <h3>DeliveryHub</h3>
-            <span class="project-metric">🚀 Multi-Vendor</span>
-        </div>
-        <p class="project-summary-desc">
-            A full-stack food delivery platform enabling users to browse restaurants, place orders, and track deliveries in real time.
-        </p>
-        <div class="project-tech-tags">
-            <span>React.js</span>
-            <span>Node.js</span>
-            <span>Express.js</span>
-            <span>MongoDB</span>
-        </div>
-        <div class="project-actions-footer">
-            <a href="https://github.com/Arif1258/Food-delivery" target="_blank" class="github-link">GitHub</a>
-            <button class="view-details-trigger-btn" data-modal="modal-food-delivery">
-                View Details
-            </button>
-        </div>
-    </div>
-</div>
-<div class="project-showcase-card" tabindex="0">
-    <div class="project-img-placeholder">
-        <span>🚕 RideFlow</span>
-    </div>
-    <div class="card-inner-pad">
-        <div class="project-header">
-            <h3>RideFlow</h3>
-            <span class="project-metric">⚡ Real-Time Tracking</span>
-        </div>
-        <p class="project-summary-desc">
-            A full-stack ride-booking platform featuring driver-passenger matching, real-time trip tracking, fare estimation, and secure authentication.
-        </p>
-        <div class="project-tech-tags">
-            <span>React.js</span>
-            <span>Node.js</span>
-            <span>Express.js</span>
-            <span>MongoDB</span>
-            <span>Socket.io</span>
-        </div>
-        <div class="project-actions-footer">
-            <a href="https://github.com/Arif1258/Uber-Clone" target="_blank" class="github-link">GitHub</a>
-            <button class="view-details-trigger-btn" data-modal="modal-rideflow">
-                View Details
-            </button>
-        </div>
-    </div>
-</div>
+            <div class="project-img-placeholder">
+              <span>🍔 DeliveryHub</span>
+            </div>
+            <div class="card-inner-pad">
+              <div class="project-header">
+                <h3>DeliveryHub</h3>
+                <span class="project-metric">🚀 Multi-Vendor</span>
+              </div>
+              <p class="project-summary-desc">A full-stack food delivery platform enabling users to browse restaurants, place orders, and track deliveries in real time.</p>
+              <div class="project-tech-tags">
+                <span>React.js</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span>
+              </div>
+              <div class="project-actions-footer">
+                <a href="https://github.com/Arif1258/Food-delivery" target="_blank" class="github-link">GitHub</a>
+                <button class="view-details-trigger-btn" data-modal="modal-food-delivery">View Details</button>
+              </div>
+            </div>
+          </div>
 <div class="project-showcase-card" tabindex="0">
     <div class="project-img-placeholder">
         <span>🚚 Nila-Delivery</span>
@@ -1169,7 +1505,8 @@
     </section>
 
     <!-- 5. PROFESSIONAL EXPERIENCE -->
-    <section id="timeline" aria-label="Professional Experience Timeline">
+    <section id="experience" aria-label="Professional Experience Timeline">
+      <span id="timeline" style="position: absolute; top: -80px; visibility: hidden;"></span>
       <div class="panel">
         <h2 class="section-title">Experience</h2>
         <p class="section-subtitle">Chronological timeline of software engineering and research positions.</p>
@@ -1492,39 +1829,223 @@
   <!-- MODALS CONTAINER -->
   <div id="modals-container" aria-label="Projects details pop-up modal boxes">
 
-    <!-- Modal 0: BiteDash -->
+    <!-- Flagship Modal 1: BiteDash -->
     <div class="modal" id="modal-bitedash" aria-hidden="true" role="dialog" aria-labelledby="modalBiteDashTitle">
-      <div class="modal-card">
+      <div class="modal-card" style="max-width: 680px;">
         <button class="modal-close" aria-label="Close modal">&times;</button>
-        <h2 id="modalBiteDashTitle">BiteDash — Multi-Vendor Food Marketplace</h2>
-        <p class="modal-intro">Full-stack multi-vendor food delivery and marketplace platform.</p>
+        <h2 id="modalBiteDashTitle" style="color: #ffffff; font-size: 22px;">BiteDash — GenAI-Powered Food Marketplace &amp; Delivery Platform</h2>
+        <p class="modal-intro">AI-powered food delivery with real-time ETA, intelligent support, geospatial discovery, and delivery optimization.</p>
+        
         <div class="modal-body-content">
-          <h4>Overview</h4>
-          <p>BiteDash is a high-performance food delivery platform designed with separate, specialized workflows for Customers, Sellers, Riders, and Admins. It implements advanced backend patterns for order orchestration, real-time communication, and route optimization.</p>
-          <h4>Engineering Highlights</h4>
+          <h4>System Architecture &amp; Data Flow</h4>
+          <!-- Interactive Architecture Diagram -->
+          <div class="arch-flow-diagram">
+            <div class="arch-row">
+              <div class="arch-node highlight-accent">
+                <span class="arch-node-name">Frontend</span>
+                <span class="arch-node-tech">React Client</span>
+              </div>
+              <span class="arch-arrow-right">→</span>
+              <div class="arch-node highlight-indigo">
+                <span class="arch-node-name">API</span>
+                <span class="arch-node-tech">Node / Express</span>
+              </div>
+              <span class="arch-arrow-right">→</span>
+              <div class="arch-node highlight-emerald">
+                <span class="arch-node-name">MongoDB</span>
+                <span class="arch-node-tech">GeoJSON &amp; TTL</span>
+              </div>
+            </div>
+            <div class="arch-arrow-down">↓</div>
+            <div class="arch-row">
+              <div class="arch-node highlight-indigo">
+                <span class="arch-node-name">Message Queue</span>
+                <span class="arch-node-tech">RabbitMQ Async Events</span>
+              </div>
+              <span style="color: var(--text-muted); font-size: 13px; font-weight: 700;">/</span>
+              <div class="arch-node highlight-accent">
+                <span class="arch-node-name">In-Memory Cache</span>
+                <span class="arch-node-tech">Redis Buffers &amp; Rates</span>
+              </div>
+            </div>
+            <div class="arch-arrow-down">↓</div>
+            <div class="arch-row">
+              <div class="arch-node highlight-accent">
+                <span class="arch-node-name">Real-Time Hub</span>
+                <span class="arch-node-tech">Socket.io Tunnels</span>
+              </div>
+            </div>
+            <div class="arch-arrow-down">↓</div>
+            <div class="arch-row">
+              <div class="arch-node highlight-emerald">
+                <span class="arch-node-name">Real-Time Clients</span>
+                <span class="arch-node-tech">Customers &bull; Riders &bull; Kitchens &bull; Admins</span>
+              </div>
+            </div>
+          </div>
+
+          <h4>Key Engineering Features</h4>
           <ul>
-            <li><strong>Dynamic Smart Order ETA Engine:</strong> Real-time ETA estimation based on delivery distance, preparation delay, and rider availability.</li>
-            <li><strong>RabbitMQ event-driven background processing:</strong> Reliable asynchronous handling of notifications, invoice generation, and status updates.</li>
-            <li><strong>Redis-based production rate limiting:</strong> High-throughput rate limit controls protecting APIs against brute-force and DDoS vectors.</li>
-            <li><strong>Geospatial "Save the Food" surplus discounts:</strong> Geospatial indexing and queries to locate and offer local surplus food items at discount.</li>
-            <li><strong>Intelligent delivery route batching:</strong> Algorithmic rider route scheduling and batching to combine nearby delivery jobs.</li>
-            <li><strong>Rule-based personalized recommendations:</strong> Collaborative and rule-driven food suggestion feeds for returning users.</li>
-            <li><strong>Rider and restaurant reliability scoring:</strong> System tracking user metrics and rating drivers and vendors on service metrics.</li>
-            <li><strong>Order anomaly detection:</strong> Heuristics-based risk assessment identifying fraud attempts and unusual transactions.</li>
-            <li><strong>Admin monitoring and support dashboard:</strong> Operations desk for managing support claims, checking metrics, and monitoring platform state.</li>
-            <li><strong>Real-time Socket.io updates:</strong> Bidirectional socket tunnels for live map coordinates, driver tracking, and instant alerts.</li>
+            <li><strong>Dynamic ETA &amp; Reliability Scoring:</strong> Engineered real-time delivery predictions calculated using preparation history, kitchen load, transit distance, rider status, and granular order lifecycle stages.</li>
+            <li><strong>GenAI Customer Support:</strong> Built a production-oriented AI support assistant using OpenAI Function Calling with authenticated tools (order history, status lookup, order details, live ETA) and deterministic fallback safety checks.</li>
+            <li><strong>Geospatial Surplus-Food Discovery:</strong> Implemented MongoDB GeoJSON spatial queries, TTL (Time-To-Live) indexes, and atomic inventory mutations for location-aware surplus-food discovery ("Save the Food").</li>
+            <li><strong>Real-Time Architecture:</strong> Decoupled backend writes using RabbitMQ message exchanges, cached active sessions with Redis, and streamed instantaneous coordinate updates via Socket.io bidirectional websockets.</li>
+            <li><strong>Delivery Optimization:</strong> Algorithmic rider route batching heuristic combining rider proximity, preparation readiness, delay constraints, and travel distances.</li>
+            <li><strong>Demand Forecasting:</strong> Analyzed ~30 days of historical order telemetry to identify neighborhood demand patterns and optimize rider staging.</li>
           </ul>
+
           <h4>Tech Stack</h4>
           <div class="modal-tech-tags-list">
-            <span>React.js</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>RabbitMQ</span><span>Redis</span><span>Socket.io</span><span>JWT</span><span>Stripe</span><span>Razorpay</span>
+            <span>React.js</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>RabbitMQ</span><span>Redis</span><span>Socket.io</span><span>Razorpay</span><span>OpenAI API</span><span>JWT</span>
           </div>
-          <h4>Challenges &amp; Solutions</h4>
-          <p>Orchestrating concurrent states across four user roles during high-throughput peaks. Resolved by implementing Redis cache buffers, RabbitMQ queues to decouple database writes, and using Socket.io to keep state synchronized across active clients.</p>
+
+          <h4>Challenges &amp; Engineering Solutions</h4>
+          <p>Handling order spikes while preserving live tracking accuracy across four active user roles. Resolved by using RabbitMQ queues to decouple heavy database writes, Redis cache layers to throttle brute requests, and Socket.io rooms to broadcast selective updates without polling.</p>
         </div>
+
         <div class="modal-footer-actions">
-          <a href="https://github.com/Arif1258/Bite-Dash" target="_blank" class="btn primary-btn-glow">Source Code</a>
-          <a href="https://bitedash-frontend.vercel.app/" target="_blank" class="btn primary-btn-glow" style="background: var(--accent); color: #020617; border-color: var(--accent);">Live Demo</a>
-          <button class="btn secondary-btn-border modal-dismiss-btn">Dismiss</button>
+          <a href="https://bitedash-frontend-two.vercel.app/" target="_blank" class="btn primary-btn-glow" style="background: var(--accent); color: #020617; border-color: var(--accent); font-weight: 700;">Live Demo</a>
+          <a href="https://github.com/Arif1258/Bite-Dash" target="_blank" class="btn secondary-btn-border">GitHub Repository</a>
+          <button class="btn secondary-btn-border modal-dismiss-btn">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flagship Modal 2: Drivo -->
+    <div class="modal" id="modal-drivo" aria-hidden="true" role="dialog" aria-labelledby="modalDrivoTitle">
+      <div class="modal-card" style="max-width: 680px;">
+        <button class="modal-close" aria-label="Close modal">&times;</button>
+        <h2 id="modalDrivoTitle" style="color: #ffffff; font-size: 22px;">Drivo — AI-Driven Smart Ride-Hailing Platform</h2>
+        <p class="modal-intro">AI-powered ride matching, demand prediction, intelligent ETA, anomaly detection, and real-time support.</p>
+        
+        <div class="modal-body-content">
+          <h4>System Architecture &amp; Data Flow</h4>
+          <!-- Interactive Architecture Diagram -->
+          <div class="arch-flow-diagram">
+            <div class="arch-row">
+              <div class="arch-node highlight-accent">
+                <span class="arch-node-name">Rider App</span>
+                <span class="arch-node-tech">React Client</span>
+              </div>
+              <span class="arch-arrow-right">→</span>
+              <div class="arch-node highlight-indigo">
+                <span class="arch-node-name">Ride Request</span>
+                <span class="arch-node-tech">Node / Express API</span>
+              </div>
+              <span class="arch-arrow-right">→</span>
+              <div class="arch-node highlight-emerald">
+                <span class="arch-node-name">Matching Engine</span>
+                <span class="arch-node-tech">Rating &bull; Distance &bull; History</span>
+              </div>
+              <span class="arch-arrow-right">→</span>
+              <div class="arch-node highlight-accent">
+                <span class="arch-node-name">Driver</span>
+                <span class="arch-node-tech">Optimal Match</span>
+              </div>
+            </div>
+            <div class="arch-arrow-down">↓</div>
+            <div class="arch-row">
+              <div class="arch-node highlight-indigo">
+                <span class="arch-node-name">Demand Engine</span>
+                <span class="arch-node-tech">Historical Patterns &bull; 1–2 km Idle Repositioning</span>
+              </div>
+            </div>
+            <div class="arch-arrow-down">↓</div>
+            <div class="arch-row">
+              <div class="arch-node highlight-accent">
+                <span class="arch-node-name">ETA / Routing</span>
+                <span class="arch-node-tech">Traffic-Aware Congestion Model + GPS Anomaly Checks</span>
+              </div>
+            </div>
+            <div class="arch-arrow-down">↓</div>
+            <div class="arch-row">
+              <div class="arch-node highlight-emerald">
+                <span class="arch-node-name">Support AI</span>
+                <span class="arch-node-tech">Grounded GenAI Agent (Live Trip &amp; Surge Details)</span>
+              </div>
+            </div>
+          </div>
+
+          <h4>Key Engineering Features</h4>
+          <ul>
+            <li><strong>Smart Driver Matching:</strong> Multi-parameter matching algorithm based on driver proximity, rating, historical acceptance rate, and cancellation track record to minimize customer wait times.</li>
+            <li><strong>Demand Prediction:</strong> Machine-learned heuristics evaluating historical patterns to identify high-density ride hotspots (e.g., higher Friday fuel-station demand) and dynamically guiding idle drivers 1–2 km toward demand zones.</li>
+            <li><strong>Driver Repositioning:</strong> Automated dispatch suggestions that preemptively direct idle supply to anticipated passenger surges before bottlenecks occur.</li>
+            <li><strong>Traffic-Aware ETA:</strong> Contextual arrival time engine utilizing time-based congestion patterns and trip geometry instead of simplistic Euclidean calculations.</li>
+            <li><strong>GPS Anomaly Detection:</strong> Telemetry inspection filters that flag impossible GPS coordinates jumps, unrealistic acceleration/speeds, and spoofing attempts.</li>
+            <li><strong>GenAI Customer Support:</strong> Context-grounded AI agent with live access to current trip telemetry, fare breakdown, and surge parameters—capable of explaining surge factors, checking dispute items, and resolving customer inquiries.</li>
+          </ul>
+
+          <h4>Tech Stack</h4>
+          <div class="modal-tech-tags-list">
+            <span>React.js</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>OpenAI API</span><span>JWT</span><span>RESTful APIs</span>
+          </div>
+
+          <h4>Challenges &amp; Engineering Solutions</h4>
+          <p>Preventing false ETA forecasts caused by rush-hour bottlenecks and detecting fake GPS pings. Solved by integrating time-sliced traffic weight coefficients and telemetry delta verification for speed threshold limits.</p>
+        </div>
+
+        <div class="modal-footer-actions">
+          <a href="https://drivo-frontend-zeta.vercel.app/" target="_blank" class="btn primary-btn-glow" style="background: var(--accent); color: #020617; border-color: var(--accent); font-weight: 700;">Live Demo</a>
+          <a href="https://github.com/Arif1258/Drivo" target="_blank" class="btn secondary-btn-border">GitHub Repository</a>
+          <button class="btn secondary-btn-border modal-dismiss-btn">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: CoolCare -->
+    <div class="modal" id="modal-coolcare" aria-hidden="true" role="dialog" aria-labelledby="modalCoolCareTitle">
+      <div class="modal-card" style="max-width: 640px;">
+        <button class="modal-close" aria-label="Close modal">&times;</button>
+        <h2 id="modalCoolCareTitle" style="color: #ffffff; font-size: 22px;">CoolCare — On-Demand AC Service Booking Platform</h2>
+        <p class="modal-intro">Full-stack technician matching, real-time job status workflows, wallet management, and admin analytics.</p>
+        
+        <div class="modal-body-content">
+          <h4>Overview</h4>
+          <p>CoolCare is a full-stack, on-demand AC servicing and maintenance booking platform that connects homeowners with verified local technicians. Features dual customer/technician portals, OTP-based job lifecycle verification, technician wallet balances, and admin analytics.</p>
+          
+          <h4>Key Features</h4>
+          <ul>
+            <li><strong>Geospatial Technician Matching:</strong> Matches customer requests with certified specialists based on service area, city pincodes, and technician ratings.</li>
+            <li><strong>OTP Verification Lifecycle:</strong> Multi-state job progress (Accepted, Work Started, Completed) requiring customer OTP confirmation before release of funds.</li>
+            <li><strong>Technician Wallet Management:</strong> Secure wallet balance tracking, job payout calculation, and withdrawal management.</li>
+            <li><strong>Admin Control Dashboard:</strong> Operations console for approving technician credentials, managing service catalogs, generating promotional coupons, and broadcasting alerts.</li>
+          </ul>
+
+          <h4>Tech Stack</h4>
+          <div class="modal-tech-tags-list">
+            <span>React.js</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>JWT</span><span>Tailwind CSS</span><span>REST APIs</span>
+          </div>
+
+          <h4>Architecture &amp; Reliability</h4>
+          <p>Built with Express Rate Limiter, Helmet security headers, and bcrypt encryption. Uses Mongoose aggregation pipelines to compute technician earnings and area demand density.</p>
+        </div>
+
+        <div class="modal-footer-actions">
+          <a href="https://github.com/Arif1258/CoolCare---AC-service-booking-site" target="_blank" class="btn primary-btn-glow">GitHub Repository</a>
+          <button class="btn secondary-btn-border modal-dismiss-btn">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dynamic Fallback Modal for Catalog Projects -->
+    <div class="modal" id="modal-dynamic-fallback" aria-hidden="true" role="dialog" aria-labelledby="dynamicModalTitle">
+      <div class="modal-card" style="max-width: 620px;">
+        <button class="modal-close" aria-label="Close modal">&times;</button>
+        <h2 id="dynamicModalTitle" style="color: #ffffff; font-size: 22px;">Project Overview</h2>
+        <p class="modal-intro" id="dynamicModalSubtitle">Detailed engineering breakdown and repository assets.</p>
+        
+        <div class="modal-body-content">
+          <h4>Project Summary</h4>
+          <p id="dynamicModalDesc"></p>
+
+          <h4>Technologies &amp; Libraries</h4>
+          <div class="modal-tech-tags-list" id="dynamicModalTags"></div>
+        </div>
+
+        <div class="modal-footer-actions">
+          <a href="#" id="dynamicModalGithub" target="_blank" class="btn primary-btn-glow" style="background: var(--accent); color: #020617; border-color: var(--accent); font-weight: 700;">View on GitHub</a>
+          <button class="btn secondary-btn-border modal-dismiss-btn">Close</button>
         </div>
       </div>
     </div>

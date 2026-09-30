@@ -278,21 +278,26 @@ document.addEventListener("DOMContentLoaded", () => {
 const aboutSection = document.querySelector("#about");
 const aboutTextEl = document.getElementById("about-text");
 
-const aboutText = `▣ SYSTEM DIAGNOSTICS: COMPLETED.
-> STUDENT IDENT: Sk Arif Ahmed
-> SPECIALIZATION: B.Tech CSE (Expected 2026)
-> INTERESTS: Scalable backend structures, API deployment, automation pipelines.
+const aboutText = `▣ SYSTEM DIAGNOSTICS: INITIALIZED & OPTIMIZED.
+> CANDIDATE : Sk Arif Ahmed
+> IDENTITY  : Full Stack Developer | AI & Backend Engineer
+> EDUCATION : B.Tech Computer Science & Engineering (2026)
 
-> BIO SNAPSHOT:
-  Focused on constructing secure backend architectures and automated cloud configurations.
-  Passionate about writing clean database queries and orchestrating Docker workloads.
+> CORE ENGINEERING ARCHITECTURE & EXPERTISE:
+  ✔ Full-Stack Development : React.js, Next.js, Node.js, Express.js, TypeScript
+  ✔ Backend Engineering    : High-throughput REST APIs, JWT Auth, Microservices
+  ✔ AI & LLM Integration   : OpenAI API, Function Calling, GenAI Agents, Tool Use
+  ✔ Real-Time Systems      : Socket.io WebSockets, Low-Latency Event Streaming
+  ✔ Distributed Systems    : RabbitMQ Message Queuing, Redis In-Memory Caching
+  ✔ Cloud & DevOps         : Docker, Kubernetes, AWS EC2, GitHub Actions CI/CD
+  ✔ System Design          : Dynamic ETA scoring, GeoJSON discovery, demand forecasting
 
-> RESEARCH STATIONS:
-  - Cybersecurity Research Intern @ UCC Ireland
+> RESEARCH & INDUSTRY STATIONS:
+  - Cybersecurity Research Intern @ University College Cork (UCC), Ireland
   - Software Development Intern @ KATSI Canada
   - Software Development Intern @ Adamas University
 
-> SYSTEM STATUS: ACTIVE. READY FOR CONNECTION.`;
+> STATUS: AVAILABLE FOR FULL-STACK & BACKEND ENGINEERING OPPORTUNITIES.`;
 
 let typed = false;
 
@@ -314,11 +319,38 @@ function typeText() {
     if (i < aboutText.length) {
       aboutTextEl.textContent += aboutText.charAt(i);
       i++;
-      setTimeout(typing, 10);
+      setTimeout(typing, 8);
     }
   }
   typing();
 }
+
+/* ==========================================================
+   INTERACTIVE 3D TILT EFFECT ON FLAGSHIP CARDS
+   ========================================================== */
+function initCardTilt() {
+  if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const cards = document.querySelectorAll(".flagship-project-card");
+  cards.forEach(card => {
+    card.addEventListener("mousemove", (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+      const rotateX = ((y - centerY) / centerY) * -5;
+      const rotateY = ((x - centerX) / centerX) * 5;
+      card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-8px)`;
+    });
+    card.addEventListener("mouseleave", () => {
+      card.style.transform = "perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0)";
+    });
+  });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  initCardTilt();
+});
 
 /* ==========================================================
    SINGLE MANAGER INSTANCE FOR MODALS (NO INTERFERENCES)
@@ -350,8 +382,37 @@ document.addEventListener("DOMContentLoaded", () => {
     btn.addEventListener("click", (e) => {
       e.stopPropagation();
       const modalId = btn.getAttribute("data-modal");
-      const modal = document.getElementById(modalId);
-      openModal(modal);
+      let modal = modalId ? document.getElementById(modalId) : null;
+
+      if (!modal) {
+        // Fallback to dynamic modal populated from card content
+        const card = btn.closest(".project-showcase-card, .project-card, .flagship-project-card");
+        const fallbackModal = document.getElementById("modal-dynamic-fallback");
+        if (card && fallbackModal) {
+          const title = card.querySelector("h3")?.textContent || "Project Overview";
+          const desc = card.querySelector(".project-summary-desc, p")?.textContent || "";
+          const tags = [...card.querySelectorAll(".project-tech-tags span, .flagship-tech-badges span")].map(t => t.textContent.trim());
+          const ghLink = card.querySelector("a.github-link, a[href*='github.com']")?.getAttribute("href") || "https://github.com/Arif1258";
+
+          const titleEl = document.getElementById("dynamicModalTitle");
+          const descEl = document.getElementById("dynamicModalDesc");
+          const tagsEl = document.getElementById("dynamicModalTags");
+          const ghEl = document.getElementById("dynamicModalGithub");
+
+          if (titleEl) titleEl.textContent = title;
+          if (descEl) descEl.textContent = desc;
+          if (tagsEl) {
+            tagsEl.innerHTML = tags.map(t => `<span>${t}</span>`).join("");
+          }
+          if (ghEl) ghEl.href = ghLink;
+
+          modal = fallbackModal;
+        }
+      }
+
+      if (modal) {
+        openModal(modal);
+      }
     });
   });
   
